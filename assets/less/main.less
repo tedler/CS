@@ -1,0 +1,65 @@
+
+body {
+	font-family: 'Bariol', sans-serif;
+}
+
+.content{
+	position: relative;
+	background: #fff;
+}
+
+.cont {
+
+	@media (min-width: @screen-desktop) {
+
+		height: 500px;
+
+	}
+}
+
+.box {
+	margin-top: -60px;
+	position: relative;
+	zoom: 1;
+	background: @blue;
+	text-align: center;
+	padding: 100px 70px 100px 70px;
+
+	@media (min-width: @screen-desktop) {
+
+		height: 560px;
+
+	}
+
+	h3 {
+		color: @white;
+		font-size: 36px;
+		font-weight: 300;
+
+		span {
+			font-weight: normal;
+		}
+	}
+
+	p {
+		color: @white;
+		font-size: 24px;
+		font-weight: 300;
+	}
+}
+
+#featured {
+	background: @white no-repeat top center;
+	background-size: cover;
+	width:100%;
+	position:fixed;
+	top:0;
+	text-align: center;
+	padding-bottom: 50px;
+
+	& h1,p {
+
+		.vertical-align();
+
+	}
+}

@@ -1,0 +1,43 @@
+@font-face {
+font-family: Bariol;
+font-weight: normal;
+src: url("../fonts/bariol/Bariol_Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: Bariol;
+font-weight: bold;
+src: url("../fonts/bariol/Bariol_Bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: Bariol;
+font-weight: 300;
+src: url("../fonts/bariol/Bariol_Light.otf") format("opentype");
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.cover () {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.vertical-align() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
