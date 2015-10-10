@@ -1,54 +1,22 @@
 
+img {
+  max-width: 100%; 
+  height: auto !important;
+}
+
 body {
+
 	font-family: 'Bariol', sans-serif;
 }
 
 .content{
+
 	position: relative;
 	background: #fff;
 }
 
-.cont {
+section.top {
 
-	@media (min-width: @screen-desktop) {
-
-		height: 500px;
-
-	}
-}
-
-.box {
-	margin-top: -60px;
-	position: relative;
-	zoom: 1;
-	background: @blue;
-	text-align: center;
-	padding: 100px 70px 100px 70px;
-
-	@media (min-width: @screen-desktop) {
-
-		height: 560px;
-
-	}
-
-	h3 {
-		color: @white;
-		font-size: 36px;
-		font-weight: 300;
-
-		span {
-			font-weight: normal;
-		}
-	}
-
-	p {
-		color: @white;
-		font-size: 24px;
-		font-weight: 300;
-	}
-}
-
-#featured {
 	background: @white no-repeat top center;
 	background-size: cover;
 	width:100%;
@@ -62,4 +30,115 @@ body {
 		.vertical-align();
 
 	}
+}
+
+section.intro {
+
+	.row {
+
+		@media (min-width: @screen-desktop) {
+
+			height: 500px;
+
+		}
+	
+		div:first-child {
+
+			margin-top: -60px;
+			position: relative;
+			zoom: 1;
+			background: @blue;
+			text-align: center;
+			padding: 100px 70px 100px 70px;
+
+			@media (min-width: @screen-desktop) {
+
+				height: 560px;
+
+			}
+
+			h3 {
+				color: @white;
+				font-size: 36px;
+				font-weight: 300;
+
+				span {
+					font-weight: normal;
+				}
+			}
+
+			p {
+				color: @white;
+				font-size: 24px;
+				font-weight: 300;
+			}
+		}
+
+	}
+
+}
+
+
+.box {
+
+	width: 100%;
+    position: relative;
+    cursor: pointer;
+    background: @blue;
+    color: @white;
+    text-decoration: none;
+    text-align: center;
+
+    &:before{
+    	content: "";
+    	display: block;
+    	padding-top: 100%;
+    }
+
+}
+
+.box1 {
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    position: absolute;
+    .opacity(.8);
+    .transition(opacity 300ms ease-out);
+
+    img{
+    	min-width: 100%;
+    	height: auto;
+    }
+}
+
+.box2 {
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    position: absolute;
+    .opacity(0);
+    background: none;
+    padding-top: 125px;
+    .transition(opacity 300ms ease-out);
+
+    & h2,p {
+
+    	.vertical-align();    	
+
+    }
+
+}
+
+.box:hover .box1 {
+
+    .opacity(.1);
+}
+
+.box:hover .box2 {
+
+    .opacity(1);
 }
