@@ -23,13 +23,11 @@ section.top {
 	position:fixed;
 	top:0;
 	text-align: center;
-	padding-bottom: 50px;
 
-	& h1,p {
-
+    &:before {
 		.vertical-align();
+    }
 
-	}
 }
 
 section.intro {
@@ -38,22 +36,26 @@ section.intro {
 
 		@media (min-width: @screen-desktop) {
 
-			height: 500px;
+			height: 480px;
 
 		}
 	
-		div:first-child {
+		.intro-box {
 
 			margin-top: -60px;
 			position: relative;
 			zoom: 1;
 			background: @blue;
 			text-align: center;
-			padding: 100px 70px 100px 70px;
+			padding: 0 70px;
+
+		    &:before {
+				.vertical-align();
+		    }
 
 			@media (min-width: @screen-desktop) {
 
-				height: 560px;
+				height: 540px;
 
 			}
 
@@ -83,11 +85,10 @@ section.intro {
 
 	width: 100%;
     position: relative;
-    cursor: pointer;
     background: @blue;
     color: @white;
     text-decoration: none;
-    text-align: center;
+    text-align: center;    
 
     &:before{
     	content: "";
@@ -122,13 +123,10 @@ section.intro {
     position: absolute;
     .opacity(0);
     background: none;
-    padding-top: 125px;
     .transition(opacity 300ms ease-out);
 
-    & h2,p {
-
-    	.vertical-align();    	
-
+    &:before {
+		.vertical-align();
     }
 
 }
@@ -136,9 +134,16 @@ section.intro {
 .box:hover .box1 {
 
     .opacity(.1);
+    cursor: pointer;
+
 }
 
 .box:hover .box2 {
 
     .opacity(1);
+    cursor: pointer;
+
 }
+
+
+
