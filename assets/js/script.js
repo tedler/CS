@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$(window).resize(function() {
 
 		var WinHeight = $(window).height();
-	    $('.top').height(WinHeight - 150);
+	    $('.top').height(WinHeight - 100);
 	    $('.content').css('top', WinHeight - 100);
 
 	});
