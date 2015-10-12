@@ -31,7 +31,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 3608,
+				"buffer_size": 4900,
 				"line_ending": "Unix"
 			}
 		},
@@ -44,10 +44,13 @@
 			}
 		},
 		{
+			"contents": "/*   GENERAL   */\n\n\nbody { font-family: 'Bariol', sans-serif; }\nimg { max-width: 100%; height: auto !important; }\nh1,h2,h3,h4,p, span { font-weight: normal; }\n\n.content{ position: relative; background: #fff; }\n\n.color-blue-light { color: @blue-light;}\n\n.bg-blue { background: @blue;}\n.bg-blue-light { background: @blue-light;}\n\n.t40 { margin-top: 45px; }\n.b40 { margin-bottom: 40px; }\n\n\n/*   NAVIGATION   */\n\n.separator {\n\n	width: 1px;\n	height: 26px;\n	background: @gray;\n	margin: 13px 25px; \n}\n\n.navbar-default {\n\n	\n}\n\n\n/*   COMPONENTS   */\n\n\n.intro-box {\n\n	margin-top: -60px;\n	position: relative;\n	zoom: 1;\n	text-align: center;\n	padding: 0 70px;\n	background-repeat: no-repeat;\n	background-position: top center;\n	background-size: cover;\n\n    &:before {\n		.vertical-align();\n    }\n\n	@media (min-width: @screen-desktop) {\n\n		height: 540px;\n\n	}\n\n	h3 {\n		color: @white;\n		font-size: 36px;\n		font-weight: 300;\n		padding: 0;\n		margin: 0;\n	}\n\n	p {\n		color: @white;\n		font-size: 24px;\n		font-weight: 300;\n		padding: 0;\n		margin: 0;\n	}\n}\n\n.intro-copy {\n\n	padding: 60px 30px;\n\n}\n\n.project {\n\n	width: 100%;\n    position: relative;\n    background: @blue;\n    color: @white;\n    text-decoration: none;\n    text-align: center;\n\n    &:before{\n    	content: \"\";\n    	display: block;\n    	padding-top: 100%;\n    }\n\n    .project-img {\n\n    	top: 0;\n    	left: 0;\n    	bottom: 0;\n    	right: 0;\n        position: absolute;\n        .opacity(.8);\n        .transition(opacity 400ms ease-out);\n\n        img{\n        	min-width: 100%;\n        	height: auto;\n        }\n    }\n\n    .project-info {\n\n    	top: 0;\n    	left: 0;\n    	bottom: 0;\n    	right: 0;\n        position: absolute;\n        .opacity(0);\n        background: none;\n        .transition(opacity 400ms ease-out);\n\n        &:before {\n    		.vertical-align();\n        }\n\n    }\n\n    &:hover .project-img {\n\n        .opacity(.2);\n        cursor: pointer;\n\n    }\n\n    &:hover .project-info {\n\n        .opacity(1);\n        cursor: pointer;\n\n    }\n}\n\nhr {\n\n	border: 0;\n	width: 30px;\n	height: 5px;\n	padding: 0;\n	margin: 0 auto;\n	.border-top-radius(50px);\n	.border-bottom-radius(50px);\n\n}\n\n\n/*   SECTIONS   */\n\n\nsection.top {\n\n	background: @white no-repeat top center;\n	background-size: cover;\n	width:100%;\n	position:fixed;\n	top:0;\n	text-align: center;\n	z-index: -1;\n\n    &:before {\n		.vertical-align();\n    }\n\n    h1 {\n\n		font-size: 70px;\n		font-weight: 300;\n		padding: 0;\n		margin: 0 0 10px 0;\n	}\n\n	p {\n		font-size: 26px;\n		font-weight: normal;\n		padding: 0;\n		margin: 0;\n	}\n\n}\n\nsection.intro {\n\n	.row {\n\n		@media (min-width: @screen-desktop) {\n\n			height: 480px;\n\n		}\n	}\n}\n\nsection.featured {\n\n	background: @blue no-repeat bottom center;\n	background-size: cover;\n	padding: 80px 0 70px 0;\n	color: @blue-light;\n\n	.featured-header {\n\n		h2 {\n\n			font-size: 36px;\n			font-weight: normal;\n			padding: 0;\n			margin: 0 0 70px 0;\n		}\n	}\n\n	.featured-footer {\n\n		p {\n\n			font-size: 28px;\n			font-weight: normal;\n			padding: 0;\n			margin: 80px 0;\n\n			a {\n\n				color: @white;\n				font-weight: normal;\n				.opacity(1);\n			}\n\n		}\n\n	}\n\n}\n\nfooter {\n\n	text-align: center;\n	margin-top: 250px;\n}\n\n",
 			"file": "assets/less/main.less",
+			"file_size": 3084,
+			"file_write_time": 130891120950000000,
 			"settings":
 			{
-				"buffer_size": 2456,
+				"buffer_size": 3108,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,7 +74,7 @@
 			"file": "assets/less/variables.less",
 			"settings":
 			{
-				"buffer_size": 6496,
+				"buffer_size": 6019,
 				"line_ending": "Unix"
 			}
 		},
@@ -130,9 +133,6 @@
 	"expanded_folders":
 	[
 		"/Users/tedler/Documents/workspace/cs",
-		"/Users/tedler/Documents/workspace/cs/assets",
-		"/Users/tedler/Documents/workspace/cs/assets/js",
-		"/Users/tedler/Documents/workspace/cs/assets/less",
 		"/Users/tedler/Documents/workspace/cs/CS",
 		"/Users/tedler/Documents/workspace/cs/public"
 	],
@@ -180,6 +180,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@grid-float-breakpoint",
+			"@grid-float-breakpoint ",
+			"400",
+			"h3",
+			"span",
 			"hr",
 			"Sydney",
 			"pointer",
@@ -248,15 +253,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3608,
+						"buffer_size": 4900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3237,
-								3237
+								634,
+								620
 							]
 						],
 						"settings":
@@ -325,10 +330,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 915.0,
+						"translation.y": 117.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -430,15 +435,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2456,
+						"buffer_size": 3108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1585,
-								1585
+								515,
+								515
 							]
 						],
 						"settings":
@@ -506,7 +511,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1175.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -534,6 +539,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -544,41 +574,6 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -588,7 +583,17 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
@@ -621,6 +626,31 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -631,41 +661,6 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -675,7 +670,17 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
@@ -694,15 +699,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6496,
+						"buffer_size": 6019,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2409,
-								2411
+								6016,
+								6016
 							]
 						],
 						"settings":
@@ -769,10 +774,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1460.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{

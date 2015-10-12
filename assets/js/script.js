@@ -15,5 +15,38 @@ $(document).ready(function() {
 
 // Comments for the next section
 	
+	var cbpAnimatedHeader = (function() {
+
+		var docElem = document.documentElement,
+			didScroll = false,
+			changeHeaderOn = 100;
+
+		function init() {
+			window.addEventListener( 'scroll', function( event ) {
+				if( !didScroll ) {
+					didScroll = true;
+					setTimeout( scrollPage, 250 );
+				}
+			}, false );
+		}
+
+		function scrollPage() {
+			var sy = scrollY();
+			if ( sy >= changeHeaderOn ) {
+				$("#top-nav").addClass("navbar-default-small");
+			}
+			else {
+				$("#top-nav").removeClass("navbar-default-small");
+			}
+			didScroll = false;
+		}
+
+		function scrollY() {
+			return window.pageYOffset || docElem.scrollTop;
+		}
+
+		init();
+
+	})();
 
 });
