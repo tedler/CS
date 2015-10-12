@@ -1,19 +1,19 @@
 /*   GENERAL   */
 
 
-img {
-  	max-width: 100%; 
-  	height: auto !important;
-}
+body { font-family: 'Bariol', sans-serif; }
+img { max-width: 100%; height: auto !important; }
+h1,h2,h3,h4,p, span { font-weight: normal; }
 
-body {
-	font-family: 'Bariol', sans-serif;
-}
+.content{ position: relative; background: #fff; }
 
-.content{
-	position: relative;
-	background: #fff;
-}
+.color-blue-light { color: @blue-light;}
+
+.bg-blue { background: @blue;}
+.bg-blue-light { background: @blue-light;}
+
+.t40 { margin-top: 45px; }
+.b40 { margin-bottom: 40px; }
 
 
 /*   COMPONENTS   */
@@ -26,6 +26,9 @@ body {
 	zoom: 1;
 	text-align: center;
 	padding: 0 70px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
 
     &:before {
 		.vertical-align();
@@ -41,17 +44,23 @@ body {
 		color: @white;
 		font-size: 36px;
 		font-weight: 300;
-
-		span {
-			font-weight: normal;
-		}
+		padding: 0;
+		margin: 0;
 	}
 
 	p {
 		color: @white;
 		font-size: 24px;
 		font-weight: 300;
+		padding: 0;
+		margin: 0;
 	}
+}
+
+.intro-copy {
+
+	padding: 60px 30px;
+
 }
 
 .project {
@@ -117,6 +126,18 @@ body {
     }
 }
 
+hr {
+
+	border: 0;
+	width: 30px;
+	height: 5px;
+	padding: 0;
+	margin: 0 auto;
+	.border-top-radius(50px);
+	.border-bottom-radius(50px);
+
+}
+
 
 /*   SECTIONS   */
 
@@ -135,6 +156,21 @@ section.top {
 		.vertical-align();
     }
 
+    h1 {
+
+		font-size: 70px;
+		font-weight: 300;
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
+
+	p {
+		font-size: 26px;
+		font-weight: normal;
+		padding: 0;
+		margin: 0;
+	}
+
 }
 
 section.intro {
@@ -146,15 +182,7 @@ section.intro {
 			height: 480px;
 
 		}
-	
-		.intro-box {
-
-			background: @blue;
-
-		}
-
 	}
-
 }
 
 section.featured {
@@ -162,23 +190,22 @@ section.featured {
 	background: @blue no-repeat bottom center;
 	background-size: cover;
 	padding: 80px 0 70px 0;
-	color: #b8d8de;
+	color: @blue-light;
 
 	.featured-header {
 
 		h2 {
 
-			font-size: 44px;
+			font-size: 36px;
 			font-weight: normal;
 			padding: 0;
 			margin: 0 0 70px 0;
-
 		}
 	}
 
 	.featured-footer {
 
-		h3 {
+		p {
 
 			font-size: 28px;
 			font-weight: normal;
