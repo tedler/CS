@@ -49,4 +49,17 @@ $(document).ready(function() {
 
 	})();
 
+// Comments for the next section
+
+	$(window).scroll(function () {
+	    var scrollTop = $(window).scrollTop();
+	    var height = $(window).height();
+
+	    $('.fadeout').css({'opacity': 1-(scrollTop/350)});
+	    $('.fadeout').css({'top': -(scrollTop/3)});
+
+	});
+
+
+
 });

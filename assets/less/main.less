@@ -15,6 +15,9 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 .t40 { margin-top: 45px; }
 .b40 { margin-bottom: 40px; }
 
+.fadeout {
+		position: relative;
+}
 
 /*   NAVIGATION   */
 
@@ -30,14 +33,19 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 
 		img {
 			width: 190px;
-			.transition(all 200ms ease-out);		
+			.transition(all 200ms ease-out);
+			.opacity(1);
+
+			&:hover {
+				.opacity(.5);
+			}
 		}
 
 	}
 
 	#navbar {
 
-		padding: 8px 0;
+		padding-top: 8px;
 
 		ul>li {
 
@@ -46,12 +54,14 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 			padding: 0 26px;
 			.transition(all 200ms ease-out);
 
-			&.nav-social {
-				padding: 0 0 0 26px;
-			}
-
 			a {
 				padding: 0;
+				.opacity(1);
+				.transition(all 200ms ease-out);
+
+				&:hover {
+					.opacity(.75);
+				}
 			}
 
 			&.active a {
@@ -67,6 +77,10 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 				padding: 0 0;
 			}
 
+			&.nav-social {
+				padding: 0 0 0 26px;
+			}
+
 			.fa {
 				font-size: 20px;
 			}			
@@ -74,7 +88,6 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 		}
 	}
 }
-
 
 .navbar-default-small {
 	
