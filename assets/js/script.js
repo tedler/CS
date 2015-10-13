@@ -13,7 +13,7 @@ $(document).ready(function() {
 	$(window).trigger('resize');
 
 
-// Comments for the next section
+// OnScroll navbar resizer
 	
 	var cbpAnimatedHeader = (function() {
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 	})();
 
-// Comments for the next section
+// OnScroll fadeout for top section elements
 
 	$(window).scroll(function () {
 	    var scrollTop = $(window).scrollTop();

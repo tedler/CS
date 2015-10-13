@@ -7,12 +7,19 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 
 .content{ position: relative; background: #fff; }
 
+.color-blue { color: @blue;}
 .color-blue-light { color: @blue-light;}
+.color-gray { color: @gray;}
+.color-gray-light { color: @gray-light;}
 
 .bg-blue { background: @blue;}
 .bg-blue-light { background: @blue-light;}
+.bg-gray { background: @gray;}
+.bg-gray-light { background: @gray-light;}
 
-.t40 { margin-top: 45px; }
+.t20 { margin-top: 20px; }
+.b20 { margin-bottom: 20px; }
+.t40 { margin-top: 40px; }
 .b40 { margin-bottom: 40px; }
 
 .fadeout {
@@ -25,100 +32,207 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 
 	.box-shadow(none);
 	background-color:rgba(255, 255, 255, 0);
-	padding: 50px 0;
+	padding: 20px 0;
 	.transition(all 200ms ease-out);
+
+	.navbar-brand {
+
+		padding: 0 0 0 15px;
+
+		img {
+			width: 150px;
+			.opacity(1);
+		}
+
+	}	
+
+	#navbar {
+
+		background-color:rgba(255, 255, 255, 1);
+		padding: 0;
+		margin: 20px 0 0 0;
+
+		ul {
+
+			padding: 20px 0;
+
+			li {
+
+			font-size: 26px;
+			font-weight: normal;
+			padding: 16px 0;
+			margin: 0 40px; 
+			border-bottom: 1px @gray-light solid;
+
+				a {
+					padding: 0;
+					.opacity(1);
+				}
+
+				&.active a {
+					.box-shadow(none);
+				}
+
+				div.nav-separator {
+
+					width: 1px;
+					height: 26px;
+					background: @gray;
+					margin: 2px 0;
+					padding: 0 0;
+				}
+
+				&.nav-social {
+					padding: 0 0 0 26px;
+				}
+
+				.fa {
+					font-size: 20px;
+				}	
+
+			}		
+
+		}
+	}
+
+	@media (min-width: @screen-tablet) {
+
+		background-color:rgba(255, 255, 255, 0);
+		padding: 50px 0;
+		.transition(all 200ms ease-out);
+
+		.navbar-brand {
+			padding-top: 0;
+
+			img {
+				width: 190px;
+				.transition(all 200ms ease-out);
+				.opacity(1);
+
+				&:hover {
+					.opacity(.5);
+				}
+			}
+
+		}
+
+		#navbar {
+
+			background-color:rgba(255, 255, 255, 0);
+			padding: 6px 0 0 0;
+			margin: 0;
+
+			ul {
+
+				padding: 0;
+
+				li {
+
+				font-size: 22px;
+				font-weight: normal;
+				padding: 0 26px;
+				margin: 0;
+				border: none;
+				.transition(all 200ms ease-out);
+
+					a {
+						padding: 0;
+						.opacity(1);
+						.transition(all 200ms ease-out);
+
+						&:hover {
+							.opacity(.75);
+						}
+					}
+
+					&.active a {
+						.box-shadow(none);
+					}
+
+					div.nav-separator {
+
+						width: 1px;
+						height: 26px;
+						background: @gray;
+						margin: 2px 0;
+						padding: 0 0;
+					}
+
+					&.nav-social {
+						padding: 0 0 0 26px;
+					}
+
+					.fa {
+						font-size: 20px;
+					}	
+
+				}
+			}
+		}
+
+	}
+
+	@media (min-width: @screen-desktop) {
+
+	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+	}
+}
+
+
+.navbar-default-small {
+	
+	background-color:rgba(255, 255, 255, 1) !important;
+	padding: 20px 0 !important;
 
 	.navbar-brand {
 		padding-top: 0;
 
-		img {
-			width: 190px;
-			.transition(all 200ms ease-out);
-			.opacity(1);
-
-			&:hover {
-				.opacity(.5);
-			}
-		}
-
 	}
 
-	#navbar {
 
-		padding-top: 8px;
+	@media (min-width: @screen-tablet) {
 
-		ul>li {
+		background-color:rgba(255, 255, 255, .95) !important;
+		padding: 14px 0 !important;
 
-			font-size: 22px;
-			font-weight: normal;
-			padding: 0 26px;
-			.transition(all 200ms ease-out);
+		.navbar-brand {
+			padding-top: 10px ;
 
-			a {
-				padding: 0;
-				.opacity(1);
-				.transition(all 200ms ease-out);
+			img {
+				width: 150px;
+			}
 
-				&:hover {
-					.opacity(.75);
+		}
+
+		#navbar {
+
+			ul>li {
+
+				font-size: 20px;
+				padding: 2px 20px;
+
+				&.nav-social {
+					padding: 0 0 0 20px;
+				}
+
+				.fa {
+					font-size: 18px;
 				}
 			}
-
-			&.active a {
-				.box-shadow(none);
-			}
-
-			div.nav-separator {
-
-				width: 1px;
-				height: 26px;
-				background: @gray;
-				margin: 2px 0;
-				padding: 0 0;
-			}
-
-			&.nav-social {
-				padding: 0 0 0 26px;
-			}
-
-			.fa {
-				font-size: 20px;
-			}			
-
-		}
-	}
-}
-
-.navbar-default-small {
-	
-	background-color:rgba(255, 255, 255, .95) !important;
-	padding: 14px 0 !important;
-
-	.navbar-brand {
-		padding-top: 10px ;
-
-		img {
-			width: 150px;
 		}
 
 	}
 
-	#navbar {
+	@media (min-width: @screen-desktop) {
 
-		ul>li {
-
-			font-size: 20px;
-			padding: 2px 20px;
-
-			&.nav-social {
-				padding: 0 0 0 20px;
-			}
-
-			.fa {
-				font-size: 18px;
-			}
-		}
 	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+	}	
 
 }
 
@@ -151,7 +265,7 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 		color: @white;
 		font-size: 36px;
 		font-weight: 300;
-		padding: 0;
+		padding: 0 0 5px 0;
 		margin: 0;
 	}
 
