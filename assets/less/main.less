@@ -16,11 +16,14 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 .bg-blue-light { background: @blue-light;}
 .bg-gray { background: @gray;}
 .bg-gray-light { background: @gray-light;}
+.bg-white { background: @white; }
 
 .t20 { margin-top: 20px; }
 .b20 { margin-bottom: 20px; }
 .t40 { margin-top: 40px; }
 .b40 { margin-bottom: 40px; }
+.t80 { margin-top: 80px; }
+.b80 { margin-bottom: 80px; }
 
 .fadeout {
 		position: relative;
@@ -296,6 +299,28 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 
 }
 
+.bottom-promo {
+
+	padding: 0 30px;
+	margin: 40px 0 0 0;
+
+	@media (min-width: @screen-tablet) {
+
+		padding: 0 30px;
+	}
+
+	@media (min-width: @screen-desktop) {
+
+		padding: 0 30px;	
+	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+		padding: 0 60px;	
+	}	
+
+}
+
 .project {
 
 	width: 100%;
@@ -328,8 +353,8 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
         .transition(opacity 400ms ease-out);
 
         img{
-        	min-width: 100%;
-        	height: auto;
+        	width: 100%;
+        	height: auto;    	
         }
     }
 
@@ -365,18 +390,41 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
     }
 }
 
+.project-wide {
+	
+	@media (min-width: @screen-tablet) {
+
+		height: 220px;
+		overflow: hidden;
+	}
+
+	@media (min-width: @screen-desktop) {
+
+		height: 293px;
+	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+		height: 360px;
+	}	
+
+}
+
 hr {
 
 	border: 0;
 	width: 30px;
 	height: 5px;
 	padding: 0;
-	margin: 0 auto;
+	
 	.border-top-radius(50px);
 	.border-bottom-radius(50px);
+	
+	&.left { margin-left: 0; margin-right: auto; }
+	&.center { margin-left: auto; margin-right: auto; }
+	&.right { margin-left: auto; margin-right: 0; }
 
 }
-
 
 /*   SECTIONS   */
 
@@ -402,6 +450,11 @@ section.top {
 		padding: 0;
 		margin: 0 0 10px 0;
 		span { display: block; }
+
+		&.short {
+			font-size: 90px;
+			font-weight: normal;
+		}
 	}
 
 	p {
@@ -437,6 +490,7 @@ section.featured {
 	background: @blue no-repeat bottom center;
 	background-size: cover;
 	color: @blue-light;
+	padding-bottom: 100px;
 
 	.featured-header {
 
@@ -508,9 +562,23 @@ section.featured {
 
 }
 
+section.cs {
+
+	background: no-repeat bottom center;
+	background-size: cover;
+	padding: 100px 0;
+
+}
+
 footer {
 
 	text-align: center;
-	margin: 250px 0 70px 0;
+	position: relative;
+	margin: 250px 0 -20px 0;
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
 }
 
