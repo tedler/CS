@@ -428,11 +428,20 @@ hr {
 
 /*   SECTIONS   */
 
+section {
+
+	background: no-repeat top center;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+section.intro {
+	padding: 0;
+}
 
 section.top {
 
-	background: @white no-repeat top center;
-	background-size: cover;
+	padding: 0;
 	width:100%;
 	position:fixed;
 	top:0;
@@ -488,9 +497,8 @@ section.top {
 section.featured {
 
 	background: @blue no-repeat bottom center;
-	background-size: cover;
 	color: @blue-light;
-	padding-bottom: 100px;
+	padding: 0 0 100px 0;
 
 	.featured-header {
 
@@ -559,14 +567,6 @@ section.featured {
 		}
 
 	}
-
-}
-
-section.cs {
-
-	background: no-repeat bottom center;
-	background-size: cover;
-	padding: 100px 0;
 
 }
 
