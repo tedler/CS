@@ -5,7 +5,7 @@ body { font-family: 'Bariol', sans-serif; }
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
-h4 { font-weight: normal; font-size: 28px; color: @gray-dark; }
+h4 { font-weight: normal; font-size: 28px; color: @gray; }
 
 .content{ position: relative; background: #fff; }
 
@@ -90,7 +90,7 @@ h4 { font-weight: normal; font-size: 28px; color: @gray-dark; }
 
 	@media (min-width: @screen-tablet) {
 
-		background-color:rgba(255, 255, 255, 0);
+		-color:rgba(255, 255, 255, 0);
 		padding: 50px 0;
 
 		.navbar-brand {
@@ -355,11 +355,14 @@ h4 { font-weight: normal; font-size: 28px; color: @gray-dark; }
 	.border-top-radius(8px);
 	.border-bottom-radius(8px);
 	cursor: pointer;
+	.transition(all 200ms ease-out);
+	position: relative;
 
 	&:hover {
 		color: @white;
 		background: darken(@blue, 10%) !important;
 		border: 1px @white solid;
+		margin-top: -5px;
 	}
 
 	&:active {
@@ -384,6 +387,7 @@ h4 { font-weight: normal; font-size: 28px; color: @gray-dark; }
 	&:hover {
 		background: lighten(@blue, 20%) !important;
 		border: 1px @white solid;
+		margin-top: 0 !important;
 	}
 
 	&:active {
@@ -720,13 +724,16 @@ section.case-study {
 	background: @white;
 	padding: 60px 80px;
 	color: @gray;
+	position: relative;
+	.transition(all 200ms ease-out);
 
 	h3 { margin: 0; color: @gray-dark;	}
 	span { font-size: 18px; }
 
 	&:hover {
-		background: @blue;
+		background: @blue-light;
 		color: @white;
+		margin-top: -5px;
 		h3 {color: @white;}
 	}
 

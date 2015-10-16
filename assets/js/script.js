@@ -55,8 +55,8 @@ $(document).ready(function() {
 	    var scrollTop = $(window).scrollTop();
 	    var height = $(window).height();
 
-	    $('.fadeout').css({'opacity': 1-(scrollTop/350)});
-	    $('.fadeout').css({'top': -(scrollTop/3)});
+	    $('.fadeout').css({'opacity': 1-(scrollTop/500)});
+	    $('.top').css({'top': -(scrollTop/3)});
 
 	});
 
