@@ -5,7 +5,7 @@ body { font-family: 'Bariol', sans-serif; }
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
-h4 { font-weight: bold; font-size: 26px; color: @gray-dark; }
+h4 { font-weight: normal; font-size: 28px; color: @gray-dark; }
 
 .content{ position: relative; background: #fff; }
 
@@ -14,6 +14,7 @@ h4 { font-weight: bold; font-size: 26px; color: @gray-dark; }
 .color-gray { color: @gray;}
 .color-gray-light { color: @gray-light;}
 .color-gray-dark { color: @gray-dark;}
+.color-white { color: @white;}
 
 .bg-blue { background: @blue;}
 .bg-blue-light { background: @blue-light;}
@@ -24,10 +25,14 @@ h4 { font-weight: bold; font-size: 26px; color: @gray-dark; }
 
 .t20 { margin-top: 20px; }
 .b20 { margin-bottom: 20px; }
+.t30 { margin-top: 30px; }
+.b30 { margin-bottom: 30px; }
 .t40 { margin-top: 40px; }
 .b40 { margin-bottom: 40px; }
 .t80 { margin-top: 80px; }
 .b80 { margin-bottom: 80px; }
+.t100 { margin-top: 100px; }
+.b100 { margin-bottom: 100px; }
 
 .fadeout {
 		position: relative;
@@ -397,12 +402,12 @@ h4 { font-weight: bold; font-size: 26px; color: @gray-dark; }
 
 .intro-copy {
 
-	padding: 0 30px;
+	padding: 0 15px;
 	margin: 60px 0; 
 
 	@media (min-width: @screen-tablet) {
 
-		padding: 60px 30px;
+		padding: 60px 15px;
 		margin: 0;
 	}
 
@@ -551,7 +556,7 @@ section {
 
 	background: no-repeat top center;
 	background-size: cover;
-	padding: 100px 0;
+	padding: 0;
 }
 
 section.intro {
@@ -617,7 +622,6 @@ section.featured {
 
 	background: @blue no-repeat bottom center;
 	color: @blue-light;
-	padding: 0 0 100px 0;
 
 	.featured-header {
 
@@ -689,11 +693,50 @@ section.featured {
 
 }
 
+section.case-study {
+
+	p {
+		font-size: 22px;
+		padding-top: 14px;
+	}
+
+	.cs-header {
+
+		text-align: left;
+		hr { margin-left: 0; margin-right: auto; }
+
+
+		@media (min-width: @screen-desktop) {
+
+		text-align: right;
+		hr { margin-left: auto; margin-right: 0; }
+		}
+
+	}	
+}
+
+.page-nav {
+
+	background: @white;
+	padding: 60px 80px;
+	color: @gray;
+
+	h3 { margin: 0; color: @gray-dark;	}
+	span { font-size: 18px; }
+
+	&:hover {
+		background: @blue;
+		color: @white;
+		h3 {color: @white;}
+	}
+
+}
+
 footer {
 
 	text-align: center;
 	position: relative;
-	margin: 250px 0 -20px 0;
+	margin: 250px 0 60px 0;
 
 	p {
 		padding: 0;
