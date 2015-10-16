@@ -5,17 +5,21 @@ body { font-family: 'Bariol', sans-serif; }
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
+h4 { font-weight: bold; font-size: 26px; color: @gray-dark; }
+
 .content{ position: relative; background: #fff; }
 
 .color-blue { color: @blue;}
 .color-blue-light { color: @blue-light;}
 .color-gray { color: @gray;}
 .color-gray-light { color: @gray-light;}
+.color-gray-dark { color: @gray-dark;}
 
 .bg-blue { background: @blue;}
 .bg-blue-light { background: @blue-light;}
 .bg-gray { background: @gray;}
 .bg-gray-light { background: @gray-light;}
+.bg-gray-dark { background: @gray-dark;}
 .bg-white { background: @white; }
 
 .t20 { margin-top: 20px; }
@@ -238,6 +242,8 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 		.vertical-align();
     }
 
+
+
 	h3 {
 		color: @white;
 		font-size: 34px;
@@ -274,6 +280,119 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 		    h3 { font-size: 40px; }
 			p { font-size: 24px; }
 	}	
+}
+
+.intro-cs {
+
+	padding: 130px 50px 120px 50px;
+
+    h1 {
+	    color: @white;
+	    font-size: 50px;
+	    font-weight: bold;
+	    padding: 0 0 5px 0;
+	    margin: 0;	
+    }
+
+    @media (min-width: @screen-tablet) {
+
+    		padding: 150px 100px 140px 100px;
+    	    h1 { font-size: 65px; }
+    }
+
+    @media (min-width: @screen-desktop) {
+
+    	    padding: 120px 100px 110px 90px;
+    	    h1 { font-size: 65px; }
+    }
+
+    @media (min-width: @screen-lg-desktop) {
+
+    	    padding: 150px 120px 140px 120px;
+    	    h1 { font-size: 75px; }
+    }	
+
+}
+
+.btn-group {
+
+	padding: 0;
+	margin: 0 0 30px 0;
+	.box-shadow(none) !important;
+	display: none;
+	
+	@media (min-width: @screen-tablet) {
+
+		display: inline-block;
+		margin-top: 60px;
+	}
+
+	@media (min-width: @screen-desktop) {
+
+		margin-top: 0;
+		.btn-default { padding: 8px 16px; }
+	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+		.btn-default { padding: 8px 28px; }
+	}	
+
+}
+
+.btn-default {
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px 28px;
+	color: @white;
+	background: @blue;
+	border: 1px @white solid;
+	.border-top-radius(8px);
+	.border-bottom-radius(8px);
+	cursor: pointer;
+
+	&:hover {
+		color: @white;
+		background: darken(@blue, 10%) !important;
+		border: 1px @white solid;
+	}
+
+	&:active {
+		color: @white !important;
+		background: darken(@blue, 10%) !important;
+		border: 1px @white solid !important;
+		.box-shadow(none) !important;
+	}
+
+	&:visited {
+		color: @white;
+		background: @blue;
+		border: 1px @white solid;
+	}
+
+}
+
+.btn-inactive {
+	background: lighten(@blue, 20%);
+	cursor: default;
+
+	&:hover {
+		background: lighten(@blue, 20%) !important;
+		border: 1px @white solid;
+	}
+
+	&:active {
+		color: @white !important;
+		background: lighten(@blue, 20%) !important;
+		border: 1px @white solid !important;
+	}
+
+	&:visited {
+		color: @white;
+		background: lighten(@blue, 20%);
+		border: 1px @white solid;
+	}
+
 }
 
 .intro-copy {
