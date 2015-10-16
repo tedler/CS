@@ -55,7 +55,7 @@ $(document).ready(function() {
 	    var scrollTop = $(window).scrollTop();
 	    var height = $(window).height();
 
-	    $('.fadeout').css({'opacity': 1-(scrollTop/500)});
+	    $('.fadeout').css({'opacity': 1-(scrollTop/500)}); // or use .top to fadeout background as well
 	    $('.top').css({'top': -(scrollTop/3)});
 
 	});

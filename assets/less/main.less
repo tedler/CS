@@ -325,6 +325,8 @@ h4 { font-weight: normal; font-size: 28px; color: @gray; }
 	margin: 0 0 30px 0;
 	.box-shadow(none) !important;
 	display: none;
+
+	.btn-default { position: relative; &:hover {margin-top: -5px;}}
 	
 	@media (min-width: @screen-tablet) {
 
@@ -356,13 +358,13 @@ h4 { font-weight: normal; font-size: 28px; color: @gray; }
 	.border-bottom-radius(8px);
 	cursor: pointer;
 	.transition(all 200ms ease-out);
-	position: relative;
+	
 
 	&:hover {
 		color: @white;
 		background: darken(@blue, 10%) !important;
 		border: 1px @white solid;
-		margin-top: -5px;
+		
 	}
 
 	&:active {
