@@ -229,6 +229,37 @@ h4 { font-weight: normal; font-size: 28px; color: @gray; }
 }
 
 
+/*   Hamburger icon animation   */
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+	 top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+  	top: 2px;
+}
+
+.navbar-toggle .icon-bar {
+	position: relative;
+	height: 3px;
+	transition: all 200ms ease-in-out;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+	top: 7px;
+	transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+	background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+	top: -7px;
+	transform: rotate(-45deg);
+}
+
+
 /*   COMPONENTS   */
 
 
@@ -752,4 +783,7 @@ footer {
 		margin: 0;
 	}
 }
+
+
+
 

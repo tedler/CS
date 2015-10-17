@@ -49,6 +49,7 @@ $(document).ready(function() {
 
 	})();
 
+
 // OnScroll fadeout for top section elements
 
 	$(window).scroll(function () {
@@ -60,6 +61,14 @@ $(document).ready(function() {
 
 	});
 
+
+// Hamburger icon animation 
+ 
+	$(document).ready(function () {
+		$(".navbar-toggle").on("click", function () {
+		    $(this).toggleClass("active");
+		});
+	});
 
 
 });
