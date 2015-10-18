@@ -2,10 +2,11 @@
 
 
 body { font-family: 'Bariol', sans-serif; }
+a { outline : none !important; img {outline : none !important;}}
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
-h4 { font-weight: normal; font-size: 28px; color: @gray; }
+h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @screen-tablet) { font-size: 28px; }}
 
 .content{ position: relative; background: #fff; }
 
@@ -399,9 +400,9 @@ h4 { font-weight: normal; font-size: 28px; color: @gray; }
 	font-size: 18px;
 	font-weight: normal;
 	padding: 8px 28px;
-	color: @white;
-	background: @blue;
-	border: 1px @white solid;
+	color: @white !important;
+	background: @blue !important;
+	border: 1px @white solid !important;
 	.border-top-radius(8px);
 	.border-bottom-radius(8px);
 	cursor: pointer;
@@ -424,14 +425,14 @@ h4 { font-weight: normal; font-size: 28px; color: @gray; }
 
 	&:visited {
 		color: @white;
-		background: @blue;
+		background: @blue !important;
 		border: 1px @white solid;
 	}
 
 }
 
 .btn-inactive {
-	background: lighten(@blue, 20%);
+	background: lighten(@blue, 20%) !important;
 	cursor: default;
 
 	&:hover {
@@ -781,7 +782,7 @@ section.case-study {
 	span { font-size: 18px; }
 
 	&:hover {
-		background: @blue-light;
+		background: @blue;
 		color: @white;
 		margin-top: -5px;
 		h3 {color: @white;}

@@ -43,6 +43,7 @@ module.exports = function(grunt) {
         src: [
           'bower_components/jquery/dist/jquery.js',
           'bower_components/bootstrap/dist/js/bootstrap.js',
+          'assets/js/jquery.scrollTo.min.js',
           'assets/js/script.js'
         ],
         dest: 'public/js/script.js',

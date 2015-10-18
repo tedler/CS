@@ -71,4 +71,30 @@ $(document).ready(function() {
 	});
 
 
+// Smooth scrolling with jquery.scrollTo.min.js
+
+    $(".btn-group a").click(function(evn){
+        evn.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash, {offset:-69}); 
+    });
+
+
+// New section
+
+	// $(function() {
+	//   $('a[href*=#]:not([href=#])').click(function() {
+	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	//       var target = $(this.hash);
+	//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	//       if (target.length) {
+	//         $('html,body').animate({
+	//           scrollTop: target.offset().top-69
+	//         }, 600);
+	//         return false;
+	//       }
+	//     }
+	//   });
+	// });
+
+
 });
