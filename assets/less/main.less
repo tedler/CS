@@ -35,6 +35,12 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .t100 { margin-top: 100px; }
 .b100 { margin-bottom: 100px; }
 
+.pr0 { @media (min-width: @screen-tablet) { padding-right: 0 !important; }}
+.pl0 { @media (min-width: @screen-tablet) { padding-left: 0 !important; }}
+
+.va { &:before { .vertical-align(); }}
+.ba { &:before { .bottom-align(); }}
+
 .fadeout {
 		position: relative;
 }
@@ -627,10 +633,6 @@ section.top {
 	text-align: center;
 	z-index: -1;
 
-    &:before {
-		.vertical-align();
-    }
-
     h1 {
 
 		font-size: 60px;
@@ -669,7 +671,7 @@ section.top {
 
 	    h1 { font-size: 70px; }
 		p { font-size: 26px; }
-	}	
+	}
 
 }
 
