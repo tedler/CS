@@ -13,9 +13,18 @@ module.exports = function(grunt) {
             },
             files: {
               //compiling style.less into style.css
-              "public/css/style.css":"assets/less/style.less"
+              "assets/css/style.css":"assets/less/style.less"
             }
         }
+    },
+
+    concat_css: {
+      options: {},
+      files: {
+         src: 'assets/css/*.css',
+        dest: 'public/css/style.css',
+      },
+
     },
 
     imagemin: {
@@ -44,6 +53,7 @@ module.exports = function(grunt) {
           'bower_components/jquery/dist/jquery.js',
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'assets/js/jquery.scrollTo.min.js',
+          'bower_components/animsition/dist/js/animsition.min.js',
           'assets/js/script.js'
         ],
         dest: 'public/js/script.js',
@@ -77,7 +87,7 @@ module.exports = function(grunt) {
         
         less: {
           files: ['assets/less/*.less'],  //watched files
-          tasks: ['less'],                          //tasks to run
+          tasks: ['less','concat_css'],                          //tasks to run
           options: {
             livereload: true                        //reloads the browser
           }
@@ -94,6 +104,7 @@ module.exports = function(grunt) {
 
   // Plugin loading
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');

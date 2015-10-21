@@ -81,7 +81,11 @@ $(document).ready(function() {
 
 // New section
 
-
+	$( document ).ready(function() {
+	  var $animsition = $('.animsition');
+	  $animsition
+	    .animsition();
+	});
 
 
 });
