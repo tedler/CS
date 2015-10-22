@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+// Removing the last child for links on touchscreen devices
+
 	// $('ul.nav a').on("touchstart", function (e) {
 
 	// 	var el = this;
@@ -8,7 +10,8 @@ $(document).ready(function() {
 	// 	par.removeChild(el);
 	// 	setTimeout(function() {par.insertBefore(el, next);}, 0);
 
-	// });
+// });
+
 
 // Top section "Background Height & Content Top Margin" resizer
 
@@ -89,7 +92,7 @@ $(document).ready(function() {
     });
 
 
-// New section
+// Page transition animation
 
 	$( document ).ready(function() {
 	  var $animsition = $('.animsition');
@@ -97,8 +100,8 @@ $(document).ready(function() {
 	    .animsition();
 	});
 
-// New section 
 
+// New section
 
 
 
