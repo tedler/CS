@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	// $('ul.nav a').on("touchstart", function (e) {
+
+	// 	var el = this;
+	// 	var par = el.parentNode;
+	// 	var next = el.nextSibling;
+	// 	par.removeChild(el);
+	// 	setTimeout(function() {par.insertBefore(el, next);}, 0);
+
+	// });
+
 // Top section "Background Height & Content Top Margin" resizer
 
 	$(window).resize(function() {
@@ -86,6 +96,10 @@ $(document).ready(function() {
 	  $animsition
 	    .animsition();
 	});
+
+// New section 
+
+
 
 
 });
