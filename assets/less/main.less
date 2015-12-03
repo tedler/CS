@@ -430,52 +430,31 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 	cursor: pointer;
 	.transition(all 200ms ease-out);
 	
-
 	&:hover {
 		color: @white;
-		background: darken(@blue, 10%) !important;
-		border: 1px @white solid;
-		
-	}
-
-	&:active {
-		color: @white !important;
-		background: darken(@blue, 10%) !important;
-		border: 1px @white solid !important;
-		.box-shadow(none) !important;
-	}
-
-	&:visited {
-		color: @white;
-		background: @blue !important;
-		border: 1px @white solid;
+		.opacity(.9);
+		background: #cdcdcd;
+		border: 1px @white solid;	
 	}
 
 }
 
 .btn-inactive {
-	background: lighten(@blue, 20%) !important;
+	.opacity(.4);
 	cursor: default;
 
 	&:hover {
-		background: lighten(@blue, 20%) !important;
+		.opacity(.4);
 		border: 1px @white solid;
 		margin-top: 0 !important;
 	}
 
-	&:active {
-		color: @white !important;
-		background: lighten(@blue, 20%) !important;
-		border: 1px @white solid !important;
-	}
-
-	&:visited {
-		color: @white;
-		background: lighten(@blue, 20%);
-		border: 1px @white solid;
-	}
-
 }
+
+.btn-group-gag {
+	.btn-default { background: #727b86 !important; }
+}
+
 
 .intro-copy {
 
