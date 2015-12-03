@@ -1,5 +1,12 @@
 /*   GENERAL   */
 
+.bg-drexy { background: #74abb0 !important; }
+.bg-qoipr { background: #323a45 !important; }
+.bg-cwa { background: #0497b9 !important; }
+.bg-bd { background: #4d4d4d !important; }
+.bg-gw { background: #2a3741 !important; }
+.bg-gag { background: #729360 !important; }
+.bg-tedler { background: #98b1b6 !important; }
 
 body { font-family: 'Bariol', sans-serif; }
 a { outline : none !important; img {outline : none !important;}}
@@ -41,9 +48,7 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .va { &:before { .vertical-align(); }}
 .ba { &:before { .bottom-align(); }}
 
-.fadeout {
-		position: relative;
-}
+.fadeout { position: relative; }
 
 /*   NAVIGATION   */
 
@@ -418,6 +423,8 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
 }
 
+
+
 .btn-default {
 	font-size: 18px;
 	font-weight: normal;
@@ -451,9 +458,13 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
 }
 
-.btn-group-gag {
-	.btn-default { background: #727b86 !important; }
-}
+.btn-group-drexy { .btn-default { .bg-drexy; }}
+.btn-group-qoipr { .btn-default { .bg-qoipr; }}
+.btn-group-cwa { .btn-default { .bg-cwa; }}
+.btn-group-bd { .btn-default { .bg-bd; }}
+.btn-group-gw { .btn-default { .bg-gw; }}
+.btn-group-gag { .btn-default { .bg-gag; }}
+.btn-group-tedler { .btn-default { .bg-tedler; }}
 
 
 .intro-copy {
