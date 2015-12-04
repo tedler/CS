@@ -94,7 +94,7 @@ $(document).ready(function() {
 
 // Page transition animation
 
-	$( document ).ready(function() {
+	$(document).ready(function() {
 	  var $animsition = $('.animsition');
 	  $animsition
 	    .animsition();
