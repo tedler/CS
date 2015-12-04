@@ -365,32 +365,35 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
 .intro-cs {
 
-	padding: 130px 50px 120px 50px;
+	padding: 80px 50px 80px 50px;
 
     h1 {
 	    color: @white;
-	    font-size: 50px;
+	    font-size: 70px;
 	    font-weight: bold;
 	    padding: 0 0 5px 0;
-	    margin: 0;	
+	    margin: 0;
+
+	    &.small {font-size: 30px;}
+
     }
 
     @media (min-width: @screen-tablet) {
 
-    		padding: 150px 100px 140px 100px;
-    	    h1 { font-size: 65px; }
+    		padding: 100px 100px 100px 100px;
+    	    h1 { font-size: 90px; &.small {font-size: 65px;} }
     }
 
     @media (min-width: @screen-desktop) {
 
-    	    padding: 120px 100px 110px 90px;
-    	    h1 { font-size: 65px; }
+    	    padding: 100px 100px 100px 90px;
+    	    h1 { font-size: 80px; &.small {font-size: 38px;} }
     }
 
     @media (min-width: @screen-lg-desktop) {
 
     	    padding: 150px 120px 140px 120px;
-    	    h1 { font-size: 75px; }
+    	    h1 { font-size: 90px; &.small {font-size: 45px;} }
     }	
 
 }
