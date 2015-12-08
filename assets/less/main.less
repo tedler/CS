@@ -621,6 +621,59 @@ hr {
 
 }
 
+a.tile {
+
+	display: block;
+	text-align: left;
+	font-size: 22px;
+	height: 80px;
+	color: @gray-dark;
+	background: @gray-light;
+	text-decoration: none;
+
+	position: relative;
+	.transition(all 200ms ease-out);
+	
+    &:before {
+		.vertical-align();
+    }
+
+    &:hover{
+    	color: @white;
+    	background: @blue;
+
+		i.fa-file-code-o {
+			color: @blue;
+			background: @gray-light;
+		}
+
+    }
+
+    .centered {
+    	width: 100%;
+    }
+
+	i.fa-file-code-o {
+		font-size: 24px !important;
+		color: @gray-light;
+		background: @gray-dark;
+		.border-top-radius(50px);
+		.border-bottom-radius(50px);
+		font-size: 28px;
+		padding: 13px 15px;
+		margin: 0 12px 0 20px;
+		.transition(all 200ms ease-out);
+	}
+
+	i.fa-angle-right {
+		float: right;
+		font-size: 44px;
+		margin: 2px 20px 0 0;
+	}
+
+}
+
+
 /*   SECTIONS   */
 
 section {
