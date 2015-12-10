@@ -31,9 +31,9 @@ module.exports = function(grunt) {
         dynamic: {                         
           files: [{
             expand: true,                  
-            cwd: 'assets/images/',                   
+            cwd: 'assets/images/-new',                   
             src: ['**/*.{png,jpg,gif,svg}'],
-            dest: 'public/images/'                 
+            dest: 'public/images/-new'                 
           }]
         }
       },
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
         },
 
         imagemin: {
-          files: ['assets/images/**/*.{png,jpg,gif,svg}'],
+          files: ['assets/images/-new/**/*.{png,jpg,gif,svg}'],
           tasks: ['imagemin']
         },
         
