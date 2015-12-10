@@ -42,6 +42,8 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .b80 { margin-bottom: 80px; }
 .t100 { margin-top: 100px; }
 .b100 { margin-bottom: 100px; }
+.t160 { margin-top: 160px; }
+.b160 { margin-bottom: 160px; }
 
 .pr0 { @media (min-width: @screen-tablet) { padding-right: 0 !important; }}
 .pl0 { @media (min-width: @screen-tablet) { padding-left: 0 !important; }}
@@ -671,6 +673,81 @@ a.tile {
 		margin: 2px 20px 0 0;
 	}
 
+}
+
+
+.layouts-item {
+	border: 3px transparent solid;
+	
+	&:hover {
+		border: 3px #ffffff solid;
+	}
+
+	@media (min-width: @screen-tablet) {
+
+		border: 8px transparent solid;
+		
+		&:hover {
+			border: 8px #ffffff solid;
+		}
+
+	}
+}
+
+.layouts-item-activ {
+	border: 3px #323a45 solid;
+
+	&:hover {
+		border: 3px #323a45 solid;
+	}
+
+	@media (min-width: @screen-tablet) {
+
+		border: 8px #323a45 solid;
+
+		&:hover {
+			border: 8px #323a45 solid;
+		}
+
+	}
+}
+
+.colors-item {
+	border: 3px transparent solid;
+	.border-top-radius(50px);
+	.border-bottom-radius(50px);
+	
+	&:hover {
+		border: 3px #ffffff solid;
+	}
+
+	@media (min-width: @screen-tablet) {
+
+		border: 8px transparent solid;
+		
+		&:hover {
+			border: 8px #ffffff solid;
+		}
+
+	}
+}
+
+.colors-item-activ {
+	border: 3px #323a45 solid;
+
+	&:hover {
+		border: 3px #323a45 solid;
+	}
+
+	@media (min-width: @screen-tablet) {
+
+		border: 8px #323a45 solid;
+
+		&:hover {
+			border: 8px #323a45 solid;
+		}
+
+	}
 }
 
 

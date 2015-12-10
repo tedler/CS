@@ -101,7 +101,77 @@ $(document).ready(function() {
 	});
 
 
-// New section
+// Layouts Slider
+
+	$('.slider-layouts').bxSlider({
+
+	  pagerCustom: '#pager-layouts',
+	  controls: false,
+	  mode: 'horizontal',
+	  easing: 'ease-out',
+	  preloadImages: 'visible',
+	  slideMargin: 40,
+	  touchEnabled: false
+
+	});
+
+
+	$(".layouts-item").click( function(){
+		
+		$(this).parents().eq(3).find('img').removeClass('layouts-item-activ');
+		$(this).toggleClass("layouts-item-activ");
+
+	});
+
+// Colors Slider
+
+	$('.slider-colors').bxSlider({
+
+	  pagerCustom: '#pager-colors',
+	  controls: false,
+	  mode: 'horizontal',
+	  easing: 'ease-out',
+	  preloadImages: 'visible',
+	  slideMargin: 40,
+	  touchEnabled: false
+
+	});
+
+
+	$(".colors-item").click( function(){
+		
+		$(this).parents().eq(3).find('img').removeClass('colors-item-activ');
+		$(this).toggleClass("colors-item-activ");
+
+	});
+
+
+// Final Slider
+
+$('.slider-final').bxSlider({
+
+  controls: false,
+  mode: 'horizontal',
+  easing: 'ease-out',
+  preloadImages: 'visible',
+  slideMargin: 40,
+  touchEnabled: true,
+  auto: true,
+  autoHover: true
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
