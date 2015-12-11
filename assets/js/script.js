@@ -148,27 +148,25 @@ $(document).ready(function() {
 
 // Final Slider
 
-$('.slider-final').bxSlider({
+	$('.slider-final').bxSlider({
 
-  controls: false,
-  mode: 'horizontal',
-  easing: 'ease-out',
-  preloadImages: 'visible',
-  slideMargin: 40,
-  touchEnabled: true,
-  auto: true,
-  autoHover: true
+	  controls: false,
+	  mode: 'horizontal',
+	  easing: 'ease-out',
+	  preloadImages: 'visible',
+	  slideMargin: 40,
+	  touchEnabled: true,
+	  auto: true,
+	  autoHover: true
 
-});
+	});
 
+// Fluidbox
 
+	$(function () {
+		    $('a').fluidbox();
 
-
-
-
-
-
-
+    });
 
 
 
