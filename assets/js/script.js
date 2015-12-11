@@ -164,7 +164,8 @@ $(document).ready(function() {
 // Fluidbox
 
 	$(function () {
-		    $('a').fluidbox();
+
+		$('a[rel="fluidbox"]').fluidbox();
 
     });
 
