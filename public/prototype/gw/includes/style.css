@@ -54,14 +54,14 @@ p+p{margin-top:1.5em;}
 
 #inwords{background:#222423;}
 #inpictures{background:#0d1519;}
-#inperson{background:#222423 url(../images/bg-inperson.jpg) no-repeat top left;}
+#inperson{background:#222423 url(../images/bg-inperson.jpg) no-repeat top left;background-size: cover !important;}
 
 .masthead{position:relative; padding-top:12em;padding-bottom:3em;text-align:center;}
 
-.bgintro1{background: #222423 url(../images/bg-intro-01.jpg) center top no-repeat;background-attachment: fixed;}
-.bgintro2{background: #222423 url(../images/bg-intro-02.jpg) center top no-repeat;background-attachment: fixed;}
-.bgintro3{background: #222423 url(../images/bg-intro-03.jpg) center top no-repeat;background-attachment: fixed;}
-.bgintro4{background: #222423 url(../images/bg-intro-04.jpg) center top no-repeat;background-attachment: fixed;}
+.bgintro1{background: #222423 url(../images/bg-intro-01.jpg) center top no-repeat;background-attachment: fixed;background-size: cover !important;}
+.bgintro2{background: #222423 url(../images/bg-intro-02.jpg) center top no-repeat;background-attachment: fixed;background-size: cover !important;}
+.bgintro3{background: #222423 url(../images/bg-intro-03.jpg) center top no-repeat;background-attachment: fixed;background-size: cover !important;}
+.bgintro4{background: #222423 url(../images/bg-intro-04.jpg) center top no-repeat;background-attachment: fixed;background-size: cover !important;}
 
 .masthead h1{font-size:3.625em;line-height:1.125em;padding: 1.25em 0 4em 0;font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;font-weight:900;margin: 0;text-align:center;color:#f9f7f6}
 @media screen and (max-width: 47.9375em){.masthead h1{font-size:2.375em;line-height:1.06667em}}
@@ -103,7 +103,7 @@ p+p{margin-top:1.5em;}
 @media screen and (max-width: 29.9375em){.work{margin:3em 0 1em 0;}}
 
 .image_carousel {padding: 0;position: relative;}
-.image_carousel img {background-color: #262d30;padding: 9px;margin: 8px;display: block;float: left;}
+.image_carousel img {background-color: #262d30;padding: 9px;margin: 8px;display: block;float: left; width: 250px; height: 400px;}
 .pagination {text-align: center;margin: 1.5em 0 0 0;}
 .pagination a {background: url(../images/icon-dot-grey.png) no-repeat top left;width: 16px;height: 16px;margin: 0 0.5em 0 0;display: inline-block;opacity:0.5;-webkit-transition:opacity 0.1618s ease-out;-moz-transition:opacity 0.1618s ease-out;-o-transition:opacity 0.1618s ease-out;transition:opacity 0.1618s ease-out;}
 .pagination a:hover { opacity: 1;}
@@ -140,7 +140,7 @@ address{font-style:normal;margin-bottom:1.5em; line-height: 1.5em;}
 address small{display:block}
 
 .footer {padding-top:45em;}
-.bgfooter{ position: fixed; height:100%; width:100%; top:0; background: #5d7a40 url(../images/bg-footer.jpg) no-repeat top center; z-index:-1;}
+.bgfooter{ position: fixed; height:100%; width:100%; top:0; background: #5d7a40 url(../images/bg-footer.jpg) no-repeat top center; z-index:-1;background-size: cover !important;}
 .gulp {background:rgba(13,21,25,0.25);padding: 3.5em 0 2.5em 0;text-align:center;}
 .scrollup{position:relative;height:4em;margin:0;opacity:0.75;-webkit-transition:opacity 0.1618s ease-out;-moz-transition:opacity 0.1618s ease-out;-o-transition:opacity 0.1618s ease-out;transition:opacity 0.1618s ease-out;}
 .scrollup img{display:block;width:auto;height:100%;margin:0 auto}

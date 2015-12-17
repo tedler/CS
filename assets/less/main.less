@@ -570,6 +570,15 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
     		.vertical-align();
         }
 
+        h2 {
+
+			font-size: 70px; &.small {font-size: 45px;}
+
+        	@media (min-width: @screen-tablet) {font-size: 50px; &.small {font-size: 30px;}}
+        	@media (min-width: @screen-desktop) {font-size: 60px; &.small {font-size: 40px;}}
+        	@media (min-width: @screen-lg-desktop) {font-size: 70px; &.small {font-size: 45px;}}	
+        }
+
     }
 
     &:hover .project-img {
@@ -754,16 +763,13 @@ a[rel="fluidbox"] {
 
 	img {
 
-	.transition(all 200ms ease-out) !important;
-	border: 4px transparent solid;
+		.transition(all 200ms ease-out) !important;
+		border: 4px transparent solid;
 
 	}
 
 	&:hover img {
-
-	border: 4px @white solid;
-
-
+		border: 4px @white solid;
 	}
 
 }
