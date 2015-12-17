@@ -527,6 +527,8 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
     text-decoration: none;
     text-align: center;
     margin-bottom: 15px;
+    overflow: hidden;
+    .transition(all 200ms ease-out);
 
     @media (min-width: @screen-tablet) {
 
@@ -546,8 +548,9 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
     	bottom: 0;
     	right: 0;
         position: absolute;
+        .scale(1,1);
         .opacity(.8);
-        .transition(opacity 400ms ease-out);
+        .transition(all 300ms ease-out);
 
         img{
         	width: 100%;
@@ -562,9 +565,10 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
     	bottom: 0;
     	right: 0;
         position: absolute;
+        margin-top: 200px;
         .opacity(0);
         background: none;
-        .transition(opacity 400ms ease-out);
+        .transition(all 300ms ease-out);
 
         &:before {
     		.vertical-align();
@@ -583,6 +587,7 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
     &:hover .project-img {
 
+		.scale(1.05,1.05);
         .opacity(.2);
         cursor: pointer;
 
@@ -590,6 +595,7 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
     &:hover .project-info {
 
+		margin-top: 0;
         .opacity(1);
         cursor: pointer;
 
@@ -794,7 +800,7 @@ section.top {
 	position:fixed;
 	top:0;
 	text-align: center;
-	z-index: -1;
+	z-index: 0;
 
     h1 {
 
@@ -838,6 +844,24 @@ section.top {
 	}
 
 }
+
+.arrow {
+	position: absolute;
+	top: 0;
+	font-size: 60px;
+
+	a {
+		color: @black;
+		.transition(all 200ms ease-out);
+
+		&:hover {
+			color: @blue;
+		};
+	}
+}
+
+.arrow-left { left: 50px; }
+.arrow-right { right: 30px; }
 
 section.featured {
 
@@ -944,14 +968,20 @@ section.case-study {
 	position: relative;
 	.transition(all 200ms ease-out);
 
-	h3 { margin: 0; color: @gray-dark;	}
+	h3 { margin: 0; padding-left: 15px; padding-right: 15px; color: @gray-dark;	}
 	span { font-size: 18px; }
+	i { font-weight: normal; font-weight: bold; color: @blue; }
 
 	&:hover {
 		background: @blue;
 		color: @white;
 		margin-top: -5px;
-		h3 {color: @white;}
+		h3 {color: @white;
+		text-decoration: none !important;
+
+		}
+
+		i { color: @white; }
 	}
 
 }

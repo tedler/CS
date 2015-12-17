@@ -19,6 +19,7 @@ $(document).ready(function() {
 
 		var WinHeight = $(window).height();
 	    $('.top').height(WinHeight - 100);
+	    $('.arrow').height(WinHeight - 100);
 	    $('.content').css('top', WinHeight - 100);
 
 	});
@@ -71,6 +72,7 @@ $(document).ready(function() {
 
 	    $('.fadeout').css({'opacity': 1-(scrollTop/500)}); // or use .top to fadeout background as well
 	    $('.top').css({'top': -(scrollTop/3)});
+	    $('.arrow').css({'top': -(scrollTop/33)});
 
 	});
 
