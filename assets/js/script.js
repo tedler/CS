@@ -27,14 +27,6 @@ $(document).ready(function() {
 
 	$(window).trigger('resize');
 
-// Toggle 'Get in touch' for Available tile
-
-		
-		$(".available-top").hover(setTimeout(sample,2000));
-
-		function sample() {
-		    $(".available-bottom").toggleClass("available-bottom-on");
-		}
 
 // OnScroll navbar resizer
 	
