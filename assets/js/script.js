@@ -27,6 +27,14 @@ $(document).ready(function() {
 
 	$(window).trigger('resize');
 
+// Toggle Available tile on touchscreen devices
+	
+	$(".available-top").on("click", function () {
+
+		$(".available-box").toggleClass("available-box-on");
+
+	});
+
 
 // OnScroll navbar resizer
 	
