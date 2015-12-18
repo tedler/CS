@@ -20,12 +20,21 @@ $(document).ready(function() {
 		var WinHeight = $(window).height();
 	    $('.top').height(WinHeight - 100);
 	    $('.arrow').height(WinHeight - 100);
+	    $('.available').height(WinHeight - 100);
 	    $('.content').css('top', WinHeight - 100);
 
 	});
 
 	$(window).trigger('resize');
 
+// Toggle 'Get in touch' for Available tile
+
+		
+		$(".available-top").hover(setTimeout(sample,2000));
+
+		function sample() {
+		    $(".available-bottom").toggleClass("available-bottom-on");
+		}
 
 // OnScroll navbar resizer
 	
