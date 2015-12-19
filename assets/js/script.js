@@ -27,12 +27,20 @@ $(document).ready(function() {
 
 	$(window).trigger('resize');
 
+
 // Toggle Available tile on touchscreen devices
 	
 	$(".available-top").on("click", function () {
 
-		$(".available-box").toggleClass("available-box-on");
+		if ($(".available-box").css("margin-right") == "-176px") {
 
+			$(".available-box").css("margin-right","0px");
+
+		} else {
+
+			$(".available-box").css("margin-right","-176px");
+
+		}
 	});
 
 
