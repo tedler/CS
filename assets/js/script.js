@@ -188,7 +188,19 @@ $(document).ready(function() {
 
     });
 
+// Typed plugin
 
+    $(function(){
+
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 3000,
+            loop: false,
+            contentType: 'html',
+            loopCount: false,
+        });
+    });
 
 
 
