@@ -180,7 +180,7 @@ $(document).ready(function() {
 
 	});
 
-// Fluidbox
+// Fluidbox.js plugin
 
 	$(function () {
 
@@ -188,7 +188,7 @@ $(document).ready(function() {
 
     });
 
-// Typed plugin
+// Typed.js plugin
 
     $(function(){
 
