@@ -832,7 +832,7 @@ a[rel="fluidbox"] {
 
 	div {
 		position: relative;
-		margin: 30px 0;
+		margin: 32px 0;
 	}
 
 	label {
@@ -863,13 +863,14 @@ a[rel="fluidbox"] {
 		font-size: 24px;
 		background-color: @gray-light;
 		color: @gray-dark;
+		border: none;
 		transition: all .2s ease-in-out;
 	} 
 
 	input[type=text]:focus, textarea:focus {
 		outline: none;
-		background-color: @blue;
-		color: @white;
+		background-color: #f9f9f9;
+		border-left: 4px @blue solid;
 	}
 
 }
@@ -892,8 +893,6 @@ a[rel="fluidbox"] {
 	text-align: right;
 	
 }
-
-
 
 
 /*   SECTIONS   */
