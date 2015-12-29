@@ -202,7 +202,17 @@ $(document).ready(function() {
         });
     });
 
+// Contacts, styles for lables
 
+	$('input, textarea').on('focusin', function() {
+	  $(this).parent().find('label').addClass('cf-active');
+	});
+
+	$('input, textarea').on('focusout', function() {
+	  if (!this.value) {
+	    $(this).parent().find('label').removeClass('cf-active');
+	  }
+	});
 
 
 });
