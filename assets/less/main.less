@@ -871,8 +871,15 @@ a[rel="fluidbox"] {
 	input[type=text]:focus, textarea:focus {
 		outline: none;
 		background-color: #f9f9f9;
+	}
+
+	input.valid, textarea.valid {
 		border-left: 4px @blue solid;
 	}
+
+	input.not-valid, textarea.not-valid {
+		border-left: 4px @red solid;
+	} 
 
 }
 

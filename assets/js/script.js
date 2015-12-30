@@ -202,7 +202,7 @@ $(document).ready(function() {
         });
     });
 
-// Contacts, styles for lables
+// Contacts: label styles
 
 	$('input, textarea').on('focusin', function() {
 	  $(this).parent().find('label').addClass('cf-active');
@@ -213,6 +213,93 @@ $(document).ready(function() {
 	    $(this).parent().find('label').removeClass('cf-active');
 	  }
 	});
+
+// Contacts: validation & captcha maths
+
+	$('#name').on('input', function() {
+		
+		var input=$(this);
+		var is_name=input.val();
+
+		if (is_name) {
+
+			input.removeClass("not-valid").addClass("valid");
+
+		} else { 
+			
+			input.removeClass("valid").addClass("not-valid");
+
+		}
+	});
+
+
+	$('#email').on('input', function() {
+
+		var input=$(this);
+		var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		var is_email=re.test(input.val());
+
+		if (is_email) {
+
+			input.removeClass("not-valid").addClass("valid");
+
+		} else { 
+
+			input.removeClass("valid").addClass("not-valid");
+
+		}
+	});
+
+
+	var n1 = Math.round(Math.random() * 4 + 1);
+	var n2 = Math.round(Math.random() * 4 + 1);
+
+	$("#captcha-label").html(n1 + " + " + n2 + " = ");
+
+	$("#captcha").on('input', function() {
+
+		var input=$(this);
+		var is_captcha=input.val();
+
+	    if ((n1 + n2) == is_captcha) {
+
+	        input.removeClass('not-valid').addClass('valid');
+
+	    } else {
+
+	        input.removeClass('valid').addClass('not-valid');
+
+	    }
+	});
+
+
+	$('#message').keyup(function(event) {
+
+		var input=$(this);
+		var message=$(this).val();
+
+		console.log(message);
+
+		if (message) {
+
+			input.removeClass("not-valid").addClass("valid");
+
+		} else {
+
+			input.removeClass("valid").addClass("not-valid");
+
+		}	
+	});
+
+
+
+
+
+
+
+
+
+
 
 
 });
