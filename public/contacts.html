@@ -89,23 +89,25 @@
         <div class="col-sm-8" style="background: #ffffff;">
           <div class="container-form">
 
+          <form id="contact" method="post" action="">
+
             <div class="row">
               <div class="col-md-5">
                   <div class="container-form-box">
 
                     <div>
-                      <label for="name">name</label>
-                      <input id="name" type="text"/>
+                      <label for="contact_name">name</label>
+                      <input id="contact_name" type="text" name="name"/>
                     </div>
 
                     <div>
-                      <label for="email">email</label>
-                      <input id="email" type="text"/>
+                      <label for="contact_email">email</label>
+                      <input id="contact_email" type="text" name="email"/>
                     </div>
                     
                     <div>
-                      <label for="captcha" id="captcha-label"></label>
-                      <input id="captcha" type="text"/>
+                      <label for="contact_captcha" id="contact_captcha_label"></label>
+                      <input id="contact_captcha" type="text" name="captcha"/>
                     </div>
 
                   </div>
@@ -115,8 +117,8 @@
                 <div class="container-form-box">
                 
                   <div>
-                    <label for="message">message</label>
-                    <textarea id="message" rows="7" cols="50"></textarea>
+                    <label for="contact_message">message</label>
+                    <textarea id="contact_message" rows="7" cols="50" name="message"></textarea>
                   </div>
 
                 </div>
@@ -125,12 +127,15 @@
 
             <div class="row">
                <div class="col-md-8 form-message">
-                 <p><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, your message is sent!</p>
+                 <p id="contact-message-required" class="display-none"><i class="fa fa-exclamation-circle color-red"></i>&nbsp;&nbsp;Please fill in the required fields.</p>
+                 <p id="contact-message-sent" class="display-none"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, your message is sent!</p>
                </div>
                <div class="col-md-4 form-button">
-                 <a href="#" class="btn btn-default">send</a>
+                 <a class="btn btn-default" id="contact_send">send</a>
                </div>
             </div>
+
+          </form>
 
           </div>
 

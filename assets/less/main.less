@@ -15,6 +15,7 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .color-gray-light { color: @gray-light;}
 .color-gray-dark { color: @gray-dark;}
 .color-white { color: @white;}
+.color-red { color: @red;}
 
 .bg-blue { background: @blue;}
 .bg-blue-light { background: @blue-light;}
@@ -52,6 +53,10 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .ba { &:before { .bottom-align(); }}
 
 .fadeout { position: relative; }
+
+.display-none {
+	display: none;
+}
 
 /*   NAVIGATION   */
 
@@ -888,7 +893,8 @@ a[rel="fluidbox"] {
 	text-align: left;
 
 	p {
-		padding: 4px 0 24px 16px;
+		margin: 0;
+		padding: 5px 0 5px 15px;
 		font-size: 20px;		
 	}
 	

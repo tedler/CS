@@ -216,7 +216,7 @@ $(document).ready(function() {
 
 // Contacts: validation & captcha maths
 
-	$('#name').on('input', function() {
+	$('#contact_name').on('input', function() {
 		
 		var input=$(this);
 		var is_name=input.val();
@@ -233,7 +233,7 @@ $(document).ready(function() {
 	});
 
 
-	$('#email').on('input', function() {
+	$('#contact_email').on('input', function() {
 
 		var input=$(this);
 		var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -254,9 +254,9 @@ $(document).ready(function() {
 	var n1 = Math.round(Math.random() * 4 + 1);
 	var n2 = Math.round(Math.random() * 4 + 1);
 
-	$("#captcha-label").html(n1 + " + " + n2 + " = ");
+	$("#contact_captcha_label").html(n1 + " + " + n2 + " = ");
 
-	$("#captcha").on('input', function() {
+	$("#contact_captcha").on('input', function() {
 
 		var input=$(this);
 		var is_captcha=input.val();
@@ -273,7 +273,7 @@ $(document).ready(function() {
 	});
 
 
-	$('#message').keyup(function(event) {
+	$('#contact_message').keyup(function(event) {
 
 		var input=$(this);
 		var message=$(this).val();
@@ -292,7 +292,30 @@ $(document).ready(function() {
 	});
 
 
+	$("#contact_send").click(function(event){
 
+		var v1=$("#contact_name").hasClass("valid");
+		var v2=$("#contact_email").hasClass("valid");
+		var v3=$("#contact_captcha").hasClass("valid");
+		var v4=$("#contact_message").hasClass("valid");
+
+		if ( v1 && v2 && v3 && v4 ) {
+
+			$("#contact-message-required").addClass("display-none");
+			$("#contact-message-sent").removeClass("display-none");
+
+			$("#contact_send").addClass("disabled");
+
+
+		} else {
+
+			event.preventDefault();
+			$("#contact-message-sent").addClass("display-none");
+			$("#contact-message-required").removeClass("display-none");
+
+		}
+
+	});
 
 
 
