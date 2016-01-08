@@ -38,7 +38,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="about.html" class="animsition-link">about<span></span></a></li>
           <li><a href="works.html">works<span></span></a></li>
-          <li class="active"><a href="contacts.html" class="animsition-link">contacts<span></span></a></li>
+          <li class="active"><a href="contacts.php" class="animsition-link">contacts<span></span></a></li>
           <li class="hidden-xs"><div class="nav-separator"></div></li>
           <li class="nav-social hidden-xs"><a href="#contact"><i class="fa fa-facebook"></i></a></li>
           <li class="nav-social hidden-xs"><a href="#contact"><i class="fa fa-dribbble"></i></a></li>
@@ -68,8 +68,6 @@
     </div>
 
 
-
-
   <div class="container-fluid bg-blue">
     <div class="container">
       <div class="row b80">
@@ -96,18 +94,18 @@
                   <div class="container-form-box">
 
                     <div>
-                      <label for="contact_name">name</label>
-                      <input id="contact_name" type="text" name="name"/>
+                      <label for="nameFrom">name</label>
+                      <input type="text" name="nameFrom" id="nameFrom" value="<?= $_POST['nameFrom']; ?>"/>
                     </div>
 
                     <div>
-                      <label for="contact_email">email</label>
-                      <input id="contact_email" type="text" name="email"/>
+                      <label for="emailFrom">email</label>
+                      <input type="text" name="emailFrom" id="emailFrom" value="<?= $_POST['emailFrom']; ?>"/>
                     </div>
                     
                     <div>
-                      <label for="contact_captcha" id="contact_captcha_label"></label>
-                      <input id="contact_captcha" type="text" name="captcha"/>
+                      <label for="captcha" id="captcha_label"></label>
+                      <input id="captcha" type="text" name="captcha"/>
                     </div>
 
                   </div>
@@ -117,8 +115,8 @@
                 <div class="container-form-box">
                 
                   <div>
-                    <label for="contact_message">message</label>
-                    <textarea id="contact_message" rows="7" cols="50" name="message"></textarea>
+                    <label for="message">message</label>
+                    <textarea rows="7" cols="50" name="message" id="message"><?= $_POST['message']; ?></textarea>
                   </div>
 
                 </div>
@@ -146,7 +144,6 @@
     </div>
 
   </div> 
-
 
 
   </section>
