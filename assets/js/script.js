@@ -305,7 +305,7 @@ $(document).ready(function() {
 
 		if ( v1 && v2 && v3 && v4 ) {
 
-			$("#contact_send").addClass("disabled");
+			$("#contact_send").addClass("disabled").html("sending ...");
 
 			$.post("php/sendemail.php",{nameFrom:nameFromVal,emailFrom:emailFromVal,message:messageVal},
 				
@@ -313,6 +313,7 @@ $(document).ready(function() {
 
 					$("#contact-message-required").addClass("display-none");
 					$("#contact-message-sent").removeClass("display-none");
+					$("#contact_send").addClass("display-none");
 
 				});
 

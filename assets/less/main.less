@@ -5,6 +5,7 @@ a { outline : none !important; img {outline : none !important;}}
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
+h3 { font-size: 32px; line-height: 42px; text-align: center; @media (min-width: @screen-tablet) { text-align: left; }}
 h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @screen-tablet) { font-size: 28px; }}
 
 .content{ position: relative; background: #fff; }
@@ -791,37 +792,52 @@ a[rel="fluidbox"] {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
+
+	@keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
 
 
 /*   CONTACTS   */
 
 .container-form {
-	padding: 30px;
+	
+	padding: 10px 10px 30px 10px;
+
+	@media (min-width: @screen-tablet) {
+
+		padding: 30px;
+
+	}
+
 }
 
 .container-details {
 
-	margin: 50px 40px 0 0;
+	margin: 20px 0 80px 0;
+	text-align: center;
+
+	hr {
+		margin-left: auto; margin-right: auto;
+	}
 
 	h4 {
 		font-size: 22px;
 		color: @white;
 		margin-bottom: 30px;
+		font-weight: bold;
 	}
 
 	p {
@@ -830,6 +846,17 @@ a[rel="fluidbox"] {
 
 	a {
 		color: @white;
+	}
+
+	@media (min-width: @screen-tablet) {
+		
+		margin: 50px 40px 0 0;
+		text-align: right;
+
+		hr {
+			margin-left: auto; margin-right: 0;
+		}
+
 	}
 
 }
@@ -895,8 +922,11 @@ a[rel="fluidbox"] {
 
 	p {
 		margin: 0;
-		padding: 5px 0 5px 15px;
-		font-size: 20px;		
+		padding: 5px 0 25px 10px;
+		font-size: 20px;
+
+		@media (min-width: @screen-tablet) { padding: 5px 0 5px 10px; }
+
 	}
 	
 }

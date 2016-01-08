@@ -71,15 +71,15 @@
   <div class="container-fluid bg-blue">
     <div class="container">
       <div class="row b80">
-        <div class="col-sm-4 text-right">
+        <div class="col-sm-4">
           <div class="container-details">
 
             <h4>contact details</h4>
-            <p>183 Broken Head Road,<br>Suffolk Park, NSW, 2481</p>
-            <hr class="bg-blue-light right t20 b20">
+            <p>183 Broken Head Rd,<br>Suffolk Park, NSW, 2481</p>
+            <hr class="bg-blue-light t20 b20">
             <p>+61 (2) 6685 4284<br>+61 (4) 2388 0877</p>
-            <hr class="bg-blue-light right t20 b20">
-            <p><a href="mailto:tedler@gmail.com">tedler (at) gmail.com</a></p>
+            <hr class="bg-blue-light t20 b20">
+            <p><a href="mailto:tedler@gmail.com">tedler [ at ] gmail.com</a></p>
 
           </div>
         </div>
@@ -126,7 +126,7 @@
             <div class="row">
                <div class="col-md-8 form-message">
                  <p id="contact-message-required" class="display-none"><i class="fa fa-exclamation-circle color-red"></i>&nbsp;&nbsp;Please fill in the required fields.</p>
-                 <p id="contact-message-sent" class="display-none"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, your message is sent!</p>
+                 <p id="contact-message-sent" class="display-none"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, message is sent!</p>
                </div>
                <div class="col-md-4 form-button">
                  <a class="btn btn-default" id="contact_send">send</a>
