@@ -5,7 +5,8 @@ a { outline : none !important; img {outline : none !important;}}
 img { max-width: 100%; height: auto !important; }
 h1,h2,h3,h4,p, span { font-weight: normal; }
 
-h3 { font-size: 32px; line-height: 42px; text-align: center; @media (min-width: @screen-tablet) { text-align: left; }}
+h3 { font-size: 32px; line-height: 42px; }
+
 h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @screen-tablet) { font-size: 28px; }}
 
 .content{ position: relative; background: #fff; }
@@ -50,14 +51,14 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .pr0 { @media (min-width: @screen-tablet) { padding-right: 0 !important; }}
 .pl0 { @media (min-width: @screen-tablet) { padding-left: 0 !important; }}
 
+.align-sm-center { text-align: center; @media (min-width: @screen-tablet) {text-align: left;}}
+
 .va { &:before { .vertical-align(); }}
 .ba { &:before { .bottom-align(); }}
 
 .fadeout { position: relative; }
 
-.display-none {
-	display: none;
-}
+.display-none { display: none; }
 
 /*   NAVIGATION   */
 

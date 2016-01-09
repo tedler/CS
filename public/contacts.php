@@ -61,7 +61,7 @@
       <div class="row t80 b80">
 
         <div class="col-sm-4"></div>
-        <div class="col-sm-8"><h3 class="color-white">I specialize in graphic design and illustration for editorial projects both print and digital.</h3></div>
+        <div class="col-sm-8"><h3 class="color-white align-sm-center">I specialize in graphic design and illustration for editorial projects both print and digital.</h3></div>
         
       </div>
 
