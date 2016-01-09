@@ -125,8 +125,8 @@
 
             <div class="row">
                <div class="col-md-8 form-message">
-                 <p id="contact-message-required" class="display-none"><i class="fa fa-exclamation-circle color-red"></i>&nbsp;&nbsp;Please fill in the required fields.</p>
-                 <p id="contact-message-sent" class="display-none"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, message is sent!</p>
+                 <p id="contact-message-required" class="display-none align-sm-center"><i class="fa fa-exclamation-circle color-red"></i>&nbsp;&nbsp;Please fill in the required fields.</p>
+                 <p id="contact-message-sent" class="display-none align-sm-center"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, message is sent!</p>
                </div>
                <div class="col-md-4 form-button">
                  <a class="btn btn-default" id="contact_send">send</a>
