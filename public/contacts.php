@@ -150,16 +150,33 @@
 
   <section class="original">
 
+  <div class="container-fluid">
+    <div class="row">
+      
+        <div class="col-sm-12 container-googlemap">
+  
+          <div class="container-googlemap-map">googlemap</div>
+          <div class="container-googlemap-color"></div>
+
+        </div>
+      
+    </div>
+  </div>  
+
+  </section>
+
+
+  <section class="original">
 
     <div class="container">
-      
+
       <footer>
                 
         <p class="color-gray">&copy; 2016 ted lermontov</p>
 
       </footer>
 
-    </div>
+    </div> 
 
   </section>
 
