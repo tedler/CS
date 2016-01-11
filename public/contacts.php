@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ted Lermontov : Freelance Web &amp; UI Designer</title>
   <link href="css/style.css" rel="stylesheet">
+
+  <script
+  src="http://maps.googleapis.com/maps/api/js">
+  </script>
+
 </head>
 
 <body>
@@ -155,8 +160,13 @@
       
         <div class="col-sm-12 container-googlemap">
   
-          <div class="container-googlemap-map">googlemap</div>
+          <div class="container-googlemap-map" id="googleMap">
+            
+
+          </div>
           <div class="container-googlemap-color"></div>
+
+          <div class=""><div class="googlemap-circle"></div></div>
 
         </div>
       
