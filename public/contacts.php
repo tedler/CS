@@ -7,9 +7,9 @@
   <title>Ted Lermontov : Freelance Web &amp; UI Designer</title>
   <link href="css/style.css" rel="stylesheet">
 
-  <script
-  src="http://maps.googleapis.com/maps/api/js">
-  </script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAlKe9WqDbSOYFfIRC-_nW66sfE4WH8kQ&callback=initMap"></script> -->
 
 </head>
 
@@ -166,7 +166,15 @@
           </div>
           <div class="container-googlemap-color"></div>
 
-          <div class=""><div class="googlemap-circle"></div></div>
+          <div class="googlemap-circle va">
+            
+            <div class="centered">
+              <p>Suffolk Park</p>
+              <hr class="bg-blue-light t10 b10">
+              <p>NSW</p>
+            </div>
+
+          </div>
 
         </div>
       
@@ -176,7 +184,7 @@
   </section>
 
 
-  <section class="original">
+<!--   <section class="original">
 
     <div class="container">
 
@@ -188,12 +196,51 @@
 
     </div> 
 
-  </section>
+  </section> -->
 
 
 </div>
 
 <script src="js/script.js"></script>
+<script>
+  
+  // Contacts: Googlemaps API - AIzaSyAAlKe9WqDbSOYFfIRC-_nW66sfE4WH8kQ
+
+  function initialize() {
+    
+    var myCenter=new google.maps.LatLng(-28.6871082,153.6088911);
+    var marker;
+
+    var mapProp = {
+
+      center:myCenter,
+      zoom:12,
+      disableDefaultUI:true,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+
+    };
+
+    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    $(".googlemap-circle").click(function(){
+
+      var marker=new google.maps.Marker({
+        position:myCenter,
+        animation:google.maps.Animation.BOUNCE
+        });
+
+      $(".googlemap-circle").addClass("display-none");
+
+      map.setZoom(13);
+      marker.setMap(map);
+
+    });
+
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 
 </body>
 </html>

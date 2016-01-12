@@ -35,6 +35,8 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 .bg-gag { background: #729360 !important; }
 .bg-tedler { background: #98b1b6 !important; }
 
+.t10 { margin-top: 10px; }
+.b10 { margin-bottom: 10px; }
 .t20 { margin-top: 20px; }
 .b20 { margin-bottom: 20px; }
 .t30 { margin-top: 30px; }
@@ -977,12 +979,23 @@ a[rel="fluidbox"] {
 	background: @blue;
 	border: 10px @blue-light solid;
 	border-radius: 100px;
+	.scale(1,1);
 	.opacity(.8);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-left: -90px; 
 	margin-top: -90px;
+	padding-top: 20px;
+	color: @white;
+	cursor: pointer;
+	.transition(all 200ms ease-out);
+
+
+	&:hover{
+		.scale(1.15,1.15);
+		.opacity(.95);
+	};
 }
 
 /*   ABOUT   */
