@@ -88,6 +88,7 @@ $(document).ready(function() {
 	    var height = $(window).height();
 
 	    $('.fadeout').css({'opacity': 1-(scrollTop/500)}); // or use .top to fadeout background as well
+	    $('.fadeout-quick').css({'opacity': 1-(scrollTop/100)});
 	    $('.top').css({'top': -(scrollTop/3)});
 	    $('.arrow').css({'top': -(scrollTop/33)});
 
