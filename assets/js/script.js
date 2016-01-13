@@ -84,6 +84,7 @@ $(document).ready(function() {
 // OnScroll fadeout for top section elements
 
 	$(window).scroll(function () {
+
 	    var scrollTop = $(window).scrollTop();
 	    var height = $(window).height();
 
@@ -330,6 +331,16 @@ $(document).ready(function() {
 
 
 
+
+	$('.skills').waypoint(function(direction) {
+
+	    $('.skills').addClass("skills-active");
+
+	  },{
+	  	triggerOnce: true,
+	    offset:'60%'
+
+	});
 
 
 
