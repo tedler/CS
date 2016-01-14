@@ -1074,8 +1074,8 @@ a[rel="fluidbox"] {
 .skills {
 
 	width: 100%;
-	display: inline-block;
-	
+	display: table;
+	position: relative;
 
 	.skills-left {
 
@@ -1084,6 +1084,7 @@ a[rel="fluidbox"] {
 		text-align: right;
 		padding: 0 24px 0 0;
 		position: relative;
+		.transition(all 300ms ease-out);
 
 		.skills-left-copy {
 
@@ -1097,14 +1098,15 @@ a[rel="fluidbox"] {
 		float: left;
 		width: 48%;
 		min-height: 60px;
-		padding: 0 2% 30px 24px;
+		padding: 0 2% 20px 24px;
 		border-left: 3px @blue-light solid;
 		position: relative;
 
 		.skills-right-copy {
 
 			margin: -13px 0 0 0;
-			display: none;
+			.opacity(0);
+			.transition(all 200ms ease-out);
 			
 			ul {
 				margin: 0;
@@ -1126,7 +1128,7 @@ a[rel="fluidbox"] {
 						left: 4px;
 						width: 5px;
 						height: 5px;
-						background: @blue-light;
+						background: @blue;
 						border-radius: 10px;
 					}
 				}
@@ -1144,13 +1146,15 @@ a[rel="fluidbox"] {
 		.skills-right-dot {
 			position: absolute;
 			content: "";
-			top: -10px;
-			left: -10px;
-			width: 18px;
-			height: 18px;
+			top: -8px;
+			left: -8px;
+			width: 14px;
+			height: 14px;
 			background: @blue-light;
 			border-radius: 10px;
 			border: 2px @white solid;
+			.scale(1,1);
+			.transition(all 300ms ease-out);
 		}
 	}
 
@@ -1174,11 +1178,13 @@ a[rel="fluidbox"] {
 
 		.skills-right-dot {
 
+			.scale(1.5,1.5);			
 			background: @blue;
 		}
 
 		.skills-right-copy {
 
+			.opacity(1);
 			display: block;
 		}
 	}

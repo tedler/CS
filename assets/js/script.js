@@ -333,17 +333,59 @@ $(document).ready(function() {
 	$('#skills-1').waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('#skills-1').removeClass("skills-active");
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-1').addClass("skills-active");
 	    }
-	    },{ offset: '80px'
+	    },{ offset: '300px'
 	});
 
 	$('#skills-1').waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
+	        $('.skills').removeClass("skills-active");
 	        $('#skills-1').addClass("skills-active");
 	    }
-	    },{ offset: '80px'
+	    },{ offset: '300px'
+	});
+
+
+
+	$('#skills-2').waypoint(function(direction) {
+	    if (direction == 'up') {
+	        
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-2').addClass("skills-active");
+	    }
+	    },{ offset: '300px'
+	});
+
+	$('#skills-2').waypoint(function(direction) {
+	    if (direction == 'down') {
+	        
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-2').addClass("skills-active");
+	    }
+	    },{ offset: '300px'
+	});
+
+
+
+	$('#skills-3').waypoint(function(direction) {
+	    if (direction == 'up') {
+	        
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-3').addClass("skills-active");
+	    }
+	    },{ offset: '300px'
+	});
+
+	$('#skills-3').waypoint(function(direction) {
+	    if (direction == 'down') {
+	        
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-3').addClass("skills-active");
+	    }
+	    },{ offset: '300px'
 	});
 
 
@@ -351,18 +393,21 @@ $(document).ready(function() {
 	$('#skills-4').waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('#skills-4').removeClass("skills-active");
+	        $('.skills').removeClass("skills-active");
+	        $('#skills-4').addClass("skills-active");
 	    }
-	    },{ offset: '80px'
+	    },{ offset: '300px'
 	});
 
 	$('#skills-4').waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
+	        $('.skills').removeClass("skills-active");
 	        $('#skills-4').addClass("skills-active");
 	    }
-	    },{ offset: '80px'
+	    },{ offset: '300px'
 	});
+
 
 
 
