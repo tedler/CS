@@ -1077,6 +1077,9 @@ a[rel="fluidbox"] {
 	display: table;
 	position: relative;
 
+	@media (min-width: @screen-tablet) { display: none; }
+	@media (min-width: @screen-desktop) { display: table; }
+
 	.skills-left {
 
 		float: left;
