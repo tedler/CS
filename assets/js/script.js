@@ -329,16 +329,40 @@ $(document).ready(function() {
 	});
 
 
-	$('.skills').waypoint(function() {
-	
-	  $('.skills').addClass("skills-active");
 
-	  },{
-	  	triggerOnce: true,
-	    offset: '0'
-
+	$('#skills-1').waypoint(function(direction) {
+	    if (direction == 'up') {
+	        
+	        $('#skills-1').removeClass("skills-active");
+	    }
+	    },{ offset: '80px'
 	});
 
+	$('#skills-1').waypoint(function(direction) {
+	    if (direction == 'down') {
+	        
+	        $('#skills-1').addClass("skills-active");
+	    }
+	    },{ offset: '80px'
+	});
+
+
+
+	$('#skills-4').waypoint(function(direction) {
+	    if (direction == 'up') {
+	        
+	        $('#skills-4').removeClass("skills-active");
+	    }
+	    },{ offset: '80px'
+	});
+
+	$('#skills-4').waypoint(function(direction) {
+	    if (direction == 'down') {
+	        
+	        $('#skills-4').addClass("skills-active");
+	    }
+	    },{ offset: '80px'
+	});
 
 
 
