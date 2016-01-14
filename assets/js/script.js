@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 // });
 
-
 // Top section "Background Height & Content Top Margin" resizer
 
 	$(window).resize(function() {
@@ -330,17 +329,16 @@ $(document).ready(function() {
 	});
 
 
-
-
-	$('.skills').waypoint(function(direction) {
-
-	    $('.skills').addClass("skills-active");
+	$('.skills').waypoint(function() {
+	
+	  $('.skills').addClass("skills-active");
 
 	  },{
 	  	triggerOnce: true,
-	    offset:'60%'
+	    offset: '0'
 
 	});
+
 
 
 
