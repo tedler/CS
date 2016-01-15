@@ -85,26 +85,28 @@ $(document).ready(function() {
 	$(window).scroll(function () {
 
 	    var scrollTop = $(window).scrollTop();
-	    var height = $(window).height();
+	    var winHeight = $(window).height();
+	    var docHeight = $(document).height();
 
 	    $('.fadeout').css({'opacity': 1-(scrollTop/500)}); // or use .top to fadeout background as well
 	    $('.fadeout-quick').css({'opacity': 1-(scrollTop/100)});
 	    $('.top').css({'top': -(scrollTop/3)});
 	    $('.arrow').css({'top': -(scrollTop/33)});
 
-		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		if(scrollTop + winHeight == docHeight) {
 
-		   // $('body').addClass('bumped');
+		   $('.bumpBottom').addClass('bumpedBottom');
 
 		} else {
 
-			if($(window).scrollTop() === 0) {
+			if(scrollTop === 0) {
 
-			  // $('body').addClass('bumped');
+			  $('.bumpTop').addClass('bumpedTop');
 			  
 			} else {
 
-				// $('body').removeClass('bumped');
+				$('.bumpBottom').removeClass('bumpedBottom');
+				$('.bumpTop').removeClass('bumpedTop');
 
 			}
 		}
@@ -114,11 +116,9 @@ $(document).ready(function() {
 
 // Hamburger icon animation
  
-	
 	$(".navbar-toggle").on("click", function () {
 	    $(this).toggleClass("active");
 	});
-	
 
 
 // Smooth scrolling with jquery.scrollTo.min.js
@@ -130,7 +130,6 @@ $(document).ready(function() {
 
 
 // Page transition animation
-
 	
 	var $animsition = $('.animsition');
 	$animsition
@@ -372,7 +371,6 @@ $(document).ready(function() {
 	});
 
 
-
 	skills2.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
@@ -392,7 +390,6 @@ $(document).ready(function() {
 	});
 
 
-
 	skills3.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
@@ -410,7 +407,6 @@ $(document).ready(function() {
 	    }
 	    },{ offset: skillsOffset
 	});
-
 
 
 	skills4.waypoint(function(direction) {

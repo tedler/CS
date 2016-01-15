@@ -19,7 +19,7 @@
 
 <section class="top va" style="background-image: url(images/bg-top-home.jpg)">
     
-    <div class="centered fadeout">
+    <div class="centered fadeout bumpTop">
       <h1 class="short">contacts</h1>
       <p>here are a handful of projects that showcase my skills and passion</p>
       <i class="fa fa-angle-down fa-2x t40 color-blue"></i>
@@ -166,7 +166,7 @@
           </div>
           <div class="container-googlemap-color"></div>
 
-          <div class="googlemap-circle va">
+          <div class="googlemap-circle va bumpBottom">
             
             <div class="centered">
               <p>Suffolk Park</p>
@@ -230,6 +230,7 @@
         });
 
       $(".googlemap-circle").addClass("display-none");
+      $(".container-googlemap-color").css("opacity","0");
 
       map.setZoom(13);
       marker.setMap(map);
