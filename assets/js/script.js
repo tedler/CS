@@ -80,7 +80,7 @@ $(document).ready(function() {
 	})();
 
 
-// OnScroll fadeout for top section elements
+// OnScroll fadeout for top section elements + Top & Bottom bumping
 
 	$(window).scroll(function () {
 
@@ -92,16 +92,33 @@ $(document).ready(function() {
 	    $('.top').css({'top': -(scrollTop/3)});
 	    $('.arrow').css({'top': -(scrollTop/33)});
 
+		if($(window).scrollTop() + $(window).height() == $(document).height()) {
+
+		   // $('body').addClass('bumped');
+
+		} else {
+
+			if($(window).scrollTop() === 0) {
+
+			  // $('body').addClass('bumped');
+			  
+			} else {
+
+				// $('body').removeClass('bumped');
+
+			}
+		}
+
 	});
 
 
-// Hamburger icon animation 
+// Hamburger icon animation
  
-	$(document).ready(function () {
-		$(".navbar-toggle").on("click", function () {
-		    $(this).toggleClass("active");
-		});
+	
+	$(".navbar-toggle").on("click", function () {
+	    $(this).toggleClass("active");
 	});
+	
 
 
 // Smooth scrolling with jquery.scrollTo.min.js
@@ -114,11 +131,10 @@ $(document).ready(function() {
 
 // Page transition animation
 
-	$(document).ready(function() {
-	  var $animsition = $('.animsition');
-	  $animsition
-	    .animsition();
-	});
+	
+	var $animsition = $('.animsition');
+	$animsition
+	.animsition();
 
 
 // Layouts Slider
@@ -328,84 +344,91 @@ $(document).ready(function() {
 
 	});
 
+// About: Waypoints for Skills section
 
+	var skills = $('.skills');
+	var skills1 = $('#skills-1');
+	var skills2 = $('#skills-2');
+	var skills3 = $('#skills-3');
+	var skills4 = $('#skills-4');
+	var skillsOffset = '300px';
 
-	$('#skills-1').waypoint(function(direction) {
+	skills1.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-1').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills1.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
-	$('#skills-1').waypoint(function(direction) {
+	skills1.waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-1').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills1.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
 
 
-	$('#skills-2').waypoint(function(direction) {
+	skills2.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-2').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills2.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
-	$('#skills-2').waypoint(function(direction) {
+	skills2.waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-2').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills2.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
 
 
-	$('#skills-3').waypoint(function(direction) {
+	skills3.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-3').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills3.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
-	$('#skills-3').waypoint(function(direction) {
+	skills3.waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-3').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills3.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
 
 
-	$('#skills-4').waypoint(function(direction) {
+	skills4.waypoint(function(direction) {
 	    if (direction == 'up') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-4').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills4.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
-	$('#skills-4').waypoint(function(direction) {
+	skills4.waypoint(function(direction) {
 	    if (direction == 'down') {
 	        
-	        $('.skills').removeClass("skills-active");
-	        $('#skills-4').addClass("skills-active");
+	        skills.removeClass("skills-active");
+	        skills4.addClass("skills-active");
 	    }
-	    },{ offset: '300px'
+	    },{ offset: skillsOffset
 	});
 
 
