@@ -59,7 +59,7 @@
 
 <div class="content animsition" data-animsition-in-class="fade-in-up" data-animsition-out-class="fade-out-down" data-animsition-in-duration="1000" data-animsition-out-duration="500">
 
-  <section class="original bg-blue">
+  <section class="bg-blue">
     
     <div class="container">
 
@@ -105,12 +105,12 @@
 
                     <div>
                       <label for="emailFrom">email</label>
-                      <input type="text" name="emailFrom" id="emailFrom" value="<?= $_POST['emailFrom']; ?>"/>
+                      <input type="email" name="emailFrom" id="emailFrom" value="<?= $_POST['emailFrom']; ?>"/>
                     </div>
                     
                     <div>
                       <label for="captcha" id="captcha_label"></label>
-                      <input id="captcha" type="text" name="captcha"/>
+                      <input type="number" name="captcha" id="captcha"/>
                     </div>
 
                   </div>
@@ -153,7 +153,7 @@
 
   </section>
 
-  <section class="original">
+  <section>
 
   <div class="container-fluid">
     <div class="row">
@@ -182,22 +182,6 @@
   </div>  
 
   </section>
-
-
-<!--   <section class="original">
-
-    <div class="container">
-
-      <footer>
-                
-        <p class="color-gray">&copy; 2016 ted lermontov</p>
-
-      </footer>
-
-    </div> 
-
-  </section> -->
-
 
 </div>
 
