@@ -342,6 +342,7 @@ $(document).ready(function() {
 		}
 
 	});
+	
 
 // About: Waypoints for Skills section
 
