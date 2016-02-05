@@ -17,10 +17,10 @@ $(document).ready(function() {
 	$(window).resize(function() {
 
 		var WinHeight = $(window).height();
-	    $('.top').height(WinHeight - 100);
-	    $('.arrow').height(WinHeight - 100);
-	    $('.available').height(WinHeight - 100);
-	    $('.content').css('top', WinHeight - 100);
+	    $('.top').height(WinHeight - 220);
+	    $('.arrow').height(WinHeight - 220);
+	    $('.available').height(WinHeight - 220);
+	    $('.content').css('top', WinHeight - 220);
 
 	});
 
