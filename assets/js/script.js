@@ -17,10 +17,12 @@ $(document).ready(function() {
 	$(window).resize(function() {
 
 		var WinHeight = $(window).height();
-	    $('.top').height(WinHeight - 220);
-	    $('.arrow').height(WinHeight - 220);
-	    $('.available').height(WinHeight - 220);
-	    $('.content').css('top', WinHeight - 220);
+		var GapHeight = WinHeight * 0.18;
+
+	    $('.top').height(WinHeight - GapHeight);
+	    $('.arrow').height(WinHeight - GapHeight);
+	    $('.available').height(WinHeight - GapHeight);
+	    $('.content').css('top', WinHeight - GapHeight);
 
 	});
 
