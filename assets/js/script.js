@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 // Smooth scrolling with jquery.scrollTo.min.js
 
-    $(".btn-group a").click(function(evn){
+    $(".btn-group a, .scroll-to").click(function(evn){
         evn.preventDefault();
         $('html,body').scrollTo(this.hash, this.hash, {offset:-69}); 
     });

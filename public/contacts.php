@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body id="top">
 
 <header class="animsition" data-animsition-in-class="fade-in-down" data-animsition-out-class="fade-out-up" data-animsition-in-duration="1000" data-animsition-out-duration="500">
 
