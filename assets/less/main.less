@@ -8,6 +8,7 @@ h1,h2,h3,h4,p, span { font-weight: normal; }
 h3 { font-size: 32px; line-height: 42px; }
 
 h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @screen-tablet) { font-size: 28px; }}
+p.bigger { font-size: 22px; }
 
 .content{ position: relative; background: #fff; }
 
@@ -52,6 +53,8 @@ h4 { font-weight: normal; font-size: 30px; color: @gray; @media (min-width: @scr
 
 .pr0 { @media (min-width: @screen-tablet) { padding-right: 0 !important; }}
 .pl0 { @media (min-width: @screen-tablet) { padding-left: 0 !important; }}
+
+.fw300 { font-weight: 300; }
 
 .align-sm-center { text-align: center; @media (min-width: @screen-tablet) {text-align: left;}}
 
@@ -1636,6 +1639,32 @@ a.link-top {
 
 		i {
 			color: @white;
+		}
+	}
+}
+
+ul.dots-green {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li {
+
+		margin: 0;
+		padding: 0 0 0 24px;
+		position: relative;
+		font-size: 20px;
+
+		&:before {
+
+			position: absolute;
+			content: "";
+			top: 12px;
+			left: 6px;
+			width: 6px;
+			height: 6px;
+			background: @blue;
+			border-radius: 10px;
 		}
 	}
 }
