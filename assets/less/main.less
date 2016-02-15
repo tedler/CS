@@ -507,22 +507,34 @@ p.bigger { font-size: 22px; }
 	}
 
 	h4 {
-		padding: 60px 0 10px 0;
+		padding: 54px 0 10px 0;
 		margin: 0;
 		color: @black;
 		font-size: 26px;
 
 		&:before {
 			content:"";
+			position: relative;
+			display: block;
 			width:48px;
 			height:38px;
-			float:left;
-			margin-top:-60px;
+			margin: -54px auto 16px auto;
 			background-image:url(../images/icons.png);
-			background-position: -1px -1px;
+			background-position: 0px 0px;
 			text-indent:-9000px;
 			overflow:hidden;
+
+			@media (min-width: @screen-tablet) {
+
+				margin: -54px 0 16px 0;
+			}
+
 		}
+
+		&.icon-ui-design:before {background-position: 0px -48px}
+		&.icon-branding:before {background-position: -58px 0px}
+		&.icon-front-end:before {background-position: -58px -48px}
+
 	}
 
 	p {
@@ -530,11 +542,19 @@ p.bigger { font-size: 22px; }
 		color: @gray-dark;
 		padding: 0;
 		margin: 0;
-	}
 
-/*	#features h2.organise::before{background-position:-10px -60px}
-	#features h2.share::before{background-position:-10px -106px}
-	#features h2.feedback::before{background-position:-10px -158px}*/
+		&.gap-bottom {
+
+			padding-bottom: 60px;
+
+			@media (min-width: @screen-tablet) {
+
+				padding-bottom: 50px;
+			}
+
+			
+		}
+	}
 
 }
 
