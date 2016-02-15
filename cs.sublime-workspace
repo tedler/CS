@@ -147,7 +147,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 6364,
+				"buffer_size": 6417,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,7 +163,7 @@
 			"file": "public/about.html",
 			"settings":
 			{
-				"buffer_size": 9610,
+				"buffer_size": 9611,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,7 +179,7 @@
 			"file": "assets/less/main.less",
 			"settings":
 			{
-				"buffer_size": 26979,
+				"buffer_size": 26997,
 				"line_ending": "Unix"
 			}
 		},
@@ -425,6 +425,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h2",
 			"hidden",
 			"font-weight",
 			"span",
@@ -551,8 +552,7 @@
 			"#emailFro",
 			"email",
 			"submit",
-			"/",
-			"email"
+			"/"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1203,15 +1203,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6364,
+						"buffer_size": 6417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2186,
-								2177
+								3413,
+								3413
 							]
 						],
 						"settings":
@@ -1280,7 +1280,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 741.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1381,15 +1381,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9610,
+						"buffer_size": 9611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								705,
-								705
+								6375,
+								6375
 							]
 						],
 						"settings":
@@ -1459,7 +1459,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2279.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1566,15 +1566,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 26979,
+						"buffer_size": 26997,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1580,
-								1580
+								24548,
+								24548
 							]
 						],
 						"settings":
@@ -1642,7 +1642,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 24072.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,

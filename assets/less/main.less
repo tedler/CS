@@ -504,7 +504,37 @@ p.bigger { font-size: 22px; }
 	@media (min-width: @screen-lg-desktop) {
 
 		padding: 60px 30px;	
-	}	
+	}
+
+	h4 {
+		padding: 60px 0 10px 0;
+		margin: 0;
+		color: @black;
+		font-size: 26px;
+
+		&:before {
+			content:"";
+			width:48px;
+			height:38px;
+			float:left;
+			margin-top:-60px;
+			background-image:url(../images/icons.png);
+			background-position: -1px -1px;
+			text-indent:-9000px;
+			overflow:hidden;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		color: @gray-dark;
+		padding: 0;
+		margin: 0;
+	}
+
+/*	#features h2.organise::before{background-position:-10px -60px}
+	#features h2.share::before{background-position:-10px -106px}
+	#features h2.feedback::before{background-position:-10px -158px}*/
 
 }
 
@@ -1261,6 +1291,7 @@ section {
 }
 
 section.intro {
+
 	padding: 0;
 }
 
