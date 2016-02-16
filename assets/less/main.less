@@ -338,20 +338,21 @@ p.bigger { font-size: 22px; }
 		.vertical-align();
     }
 
-
-
 	h3 {
 		color: @white;
-		font-size: 34px;
-		font-weight: normal;
+		font-size: 30px;
+		line-height: 50px;
+		font-weight: 300;
 		padding: 0 0 5px 0;
 		margin: 0;
+		line-height: 42px;
+		span { font-size: 42px; }
 	}
 
 	p {
 		color: @white;
 		font-size: 22px;
-		font-weight: normal;
+		font-weight: 300;
 		padding: 0;
 		margin: 0;
 	}
@@ -359,21 +360,30 @@ p.bigger { font-size: 22px; }
 	@media (min-width: @screen-tablet) {
 
 			padding: 150px 50px 80px 50px;
-		    h3 { font-size: 44px; }
+		    h3 { font-size: 44px;
+		    	line-height: 64px;
+		    	span { font-size: 64px; }
+		    }
 			p { font-size: 24px; }
 	}
 
 	@media (min-width: @screen-desktop) {
 
 		    padding: 120px 50px 60px 50px;
-		    h3 { font-size: 34px; font-weight: 300; }
-			p { font-size: 20px; font-weight: 300; }
+		    h3 { font-size: 32px; 
+		    	line-height: 46px;
+		    	span { font-size: 46px; }
+		    }
+			p { font-size: 20px; }
 	}
 
 	@media (min-width: @screen-lg-desktop) {
 
 		    padding: 130px 70px 80px 70px;
-		    h3 { font-size: 40px; }
+		    h3 { font-size: 34px;
+		    	line-height: 50px;
+		    	span { font-size: 50px; }
+		    }
 			p { font-size: 24px; }
 	}	
 }
