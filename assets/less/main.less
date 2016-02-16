@@ -333,6 +333,7 @@ p.bigger { font-size: 22px; }
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	.border-top-radius(5px);
 
     &:before {
 		.vertical-align();
@@ -460,8 +461,8 @@ p.bigger { font-size: 22px; }
 	color: @white !important;
 	background: @blue !important;
 	border: 1px @white solid !important;
-	.border-top-radius(8px);
-	.border-bottom-radius(8px);
+	.border-top-radius(5px);
+	.border-bottom-radius(5px);
 	cursor: pointer;
 	.transition(all 200ms ease-out);
 	
@@ -498,7 +499,7 @@ p.bigger { font-size: 22px; }
 .intro-copy {
 
 	padding: 0 60px;
-	margin: 30px 0 60px 0; 
+	margin: 30px 0 60px 0;
 
 	@media (min-width: @screen-tablet) {
 
@@ -508,12 +509,12 @@ p.bigger { font-size: 22px; }
 
 	@media (min-width: @screen-desktop) {
 
-		padding: 60px 30px 60px 30px;	
+		padding: 60px 30px 60px 30px;
 	}
 
 	@media (min-width: @screen-lg-desktop) {
 
-		padding: 60px 30px 60px 30px;	
+		padding: 60px 30px 60px 30px;
 	}
 
 	h4 {
@@ -548,7 +549,7 @@ p.bigger { font-size: 22px; }
 
 	@media (min-width: @screen-lg-desktop) {
 
-		padding: 60px 30px 60px 60px;	
+		padding: 85px 30px 60px 60px;	
 	}
 
 	h4 {
@@ -916,6 +917,9 @@ a[rel="fluidbox"] {
 .container-form {
 	
 	padding: 10px 10px 30px 10px;
+	.border-top-radius(5px);
+	.border-bottom-radius(5px);
+	background: @white;
 
 	@media (min-width: @screen-tablet) {
 
@@ -999,6 +1003,8 @@ a[rel="fluidbox"] {
 		background-color: @gray-light;
 		color: @gray-dark;
 		border: none;
+		.border-top-radius(5px);
+		.border-bottom-radius(5px);
 		transition: all .2s ease-in-out;
 	} 
 
@@ -1471,8 +1477,8 @@ section.top {
 			font-weight: normal;
 			padding: 20px 0 20px 64px;
 			background: @white;
-			border-top-left-radius: 6px;
-			border-bottom-left-radius: 6px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
 			box-shadow: 2px 2px 4px rgba(59,74,93,.25);
 
 			&::before {

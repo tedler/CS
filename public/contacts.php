@@ -89,7 +89,7 @@
           </div>
         </div>
         
-        <div class="col-sm-8 bg-white">
+        <div class="col-sm-8 bg-blue">
           <div class="container-form">
 
           <form id="contact" method="post" action="">
