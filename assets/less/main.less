@@ -1751,13 +1751,18 @@ footer {
 
 a.link-top {
 	display: block;
-	height: 44px;
-	width: 44px;
+	height: 42px;
+	width: 42px;
+	padding: 5px 0 0 0; 
 	margin: 0 auto 30px auto;
 	.border-top-radius(50px);
 	.border-bottom-radius(50px);
 	.scale (1, 1);
 	.transition(all 200ms ease-out);
+
+	i {
+		font-weight: bold;
+	}
 
 	&:hover {
 		background: @blue;
