@@ -59,7 +59,7 @@
 
 <div class="content animsition" data-animsition-in-class="fade-in-up" data-animsition-out-class="fade-out-down" data-animsition-in-duration="1000" data-animsition-out-duration="500">
 
-  <section class="bg-blue">
+  <section class="gr-home-btm">
     
     <div class="container">
 
@@ -73,7 +73,7 @@
     </div>
 
 
-  <div class="container-fluid bg-blue">
+  <div class="container-fluid">
     <div class="container">
       <div class="row b80">
         <div class="col-sm-4">
@@ -89,7 +89,7 @@
           </div>
         </div>
         
-        <div class="col-sm-8 bg-blue">
+        <div class="col-sm-8">
           <div class="container-form">
 
           <form id="contact" method="post" action="">
