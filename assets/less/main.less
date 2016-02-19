@@ -57,8 +57,8 @@ a.link-not-bold {
 .bg-gag { background: #729360 !important; }
 .bg-tedler { background: #98b1b6 !important; }
 
-.gr-home-top {background: url(../images/bg-intro-box.png), linear-gradient(to bottom, #519eae, @blue)  }
-.gr-home-btm {background: linear-gradient(to bottom, @blue, #519eae); }
+.gr-home-top {background-image: url(../images/bg-intro-box.png), linear-gradient(to bottom, @blue-dark, @blue); }
+.gr-home-btm {background: linear-gradient(to bottom, @blue, @blue-dark); }
 .gr-drexy-top {background: linear-gradient(to bottom, #5a9ba1, #74abb0); }
 .gr-drexy-btm {background: linear-gradient(to bottom, #74abb0, #5a9ba1); }
 .gr-qoipr-top {background: linear-gradient(to bottom, #212935, #323a45); }
@@ -353,7 +353,7 @@ a.link-not-bold {
 				transform: rotate(-45deg);
 			}
 		}
-	}	
+	}
 }
 
 .collapsed {
@@ -379,6 +379,8 @@ a.link-not-bold {
     &:before {
 		.vertical-align();
     }
+
+
 
 	h3 {
 		color: @white;
@@ -501,7 +503,7 @@ a.link-not-bold {
 .btn-default {
 	font-size: 18px;
 	font-weight: normal;
-	padding: 8px 28px;
+	padding: 8px 24px;
 	color: @white !important;
 	background: @blue !important;
 	border: 1px @white solid !important;
@@ -688,7 +690,7 @@ a.link-not-bold {
 
 	width: 100%;
     position: relative;
-    background: @blue;
+    background: @blue-dark;
     color: @white;
     text-decoration: none;
     text-align: center;
@@ -762,7 +764,7 @@ a.link-not-bold {
     &:hover .project-info {
 
 		margin-top: 0;
-        .opacity(1);
+        .opacity(.9);
         cursor: pointer;
 
     }
@@ -978,6 +980,12 @@ a[rel="fluidbox"] {
 	.border-top-radius(5px);
 	.border-bottom-radius(5px);
 	background: @white;
+	.opacity(.9);
+	.transition(all 300ms ease-out);
+
+	&:hover{
+		.opacity(1);
+	}
 
 	@media (min-width: @screen-tablet) {
 
