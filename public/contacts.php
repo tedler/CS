@@ -84,7 +84,7 @@
             <hr class="bg-blue-light t20 b20">
             <p>+61 (2) 6685 4284<br>+61 (4) 2388 0877</p>
             <hr class="bg-blue-light t20 b20">
-            <p><a href="mailto:tedler@gmail.com">tedler [ at ] gmail.com</a></p>
+            <p><a href="mailto:tedler@gmail.com" class="link link-not-bold">tedler [ at ] gmail.com</a></p>
 
           </div>
         </div>
