@@ -953,7 +953,15 @@ a[rel="fluidbox"] {
 
 }
 
+#typed {
+	background: @black;
+	color: @white;
+	border-radius: 5px;
+	padding: 6px 40px 8px 40px;
+}
+
 .typed-cursor{
+	display: none;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -1373,8 +1381,13 @@ a[rel="fluidbox"] {
 /*   ANIMATION   */
 
 .bumpedTop {
-	-webkit-animation: bounceTop .4s linear;
-	-moz-animation: bounceTop .4s linear;
+
+	@media (min-width: @screen-desktop) { 
+	
+		-webkit-animation: bounceTop .4s linear;
+		-moz-animation: bounceTop .4s linear;
+
+	}
 }
 
 @-webkit-keyframes bounceTop {
@@ -1398,8 +1411,14 @@ a[rel="fluidbox"] {
 }
 
 .bumpedBottom {
-	-webkit-animation: bounceBottom .4s linear;
-	-moz-animation: bounceBottom .4s linear;
+
+	@media (min-width: @screen-desktop) { 
+	
+		-webkit-animation: bounceBottom .4s linear;
+		-moz-animation: bounceBottom .4s linear;
+
+	}
+
 }
 
 @-webkit-keyframes bounceBottom {
@@ -1885,4 +1904,3 @@ h4.icon-top {
     &.icon-top-passion:before {background-position: -58px -96px}
 
 }
-
