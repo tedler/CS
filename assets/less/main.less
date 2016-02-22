@@ -375,12 +375,11 @@ a.link-not-bold {
 	background-position: top center;
 	background-size: cover;
 	.border-top-radius(5px);
+	.border-bottom-radius(5px);
 
     &:before {
 		.vertical-align();
     }
-
-
 
 	h3 {
 		color: @white;
@@ -418,6 +417,7 @@ a.link-not-bold {
 	@media (min-width: @screen-desktop) {
 
 		    padding: 120px 50px 60px 50px;
+		    .border-bottom-radius(0px);
 		    h3 { font-size: 30px; 
 		    	line-height: 46px;
 		    	span { font-size: 46px; }
@@ -953,12 +953,12 @@ a[rel="fluidbox"] {
 
 }
 
-#typed {
+/*#typed {
 	background: @black;
 	color: @white;
 	border-radius: 5px;
 	padding: 6px 40px 8px 40px;
-}
+}*/
 
 .typed-cursor{
 	display: none;
@@ -1483,8 +1483,11 @@ section.top {
 		display: none;
 		font-size: 28px;
 		font-weight: normal;
-		padding: 0;
-		margin: 0;
+		margin: 10px 0 0 0;
+		background: @black;
+		color: @white;
+		border-radius: 5px;
+		padding: 6px 40px 8px 40px;
 	}
 
 	@media (min-width: @screen-tablet) {
@@ -1497,7 +1500,8 @@ section.top {
 	@media (min-width: @screen-desktop) {
 
 	    h1 { font-size: 60px; span {display: inline; }}
-		p { font-size: 24px; display: block !important; }
+		p { font-size: 24px; display: inline-block !important; }
+		i { display: block; }
 	}
 
 	@media (min-width: @screen-lg-desktop) {
@@ -1554,7 +1558,6 @@ section.top {
 				margin-top: 66px;
 			}
 		}
-
 
 		.available-top {
 
