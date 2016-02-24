@@ -220,8 +220,7 @@ a.link-not-bold {
 							    display: block;
 							    height: 2px;
 							    .scale(0,1);
-							    .border-top-radius(2px);
-							    .border-bottom-radius(2px);
+							    border-radius: 2px;
 							    .transition(all 120ms ease-in-out);
 							}
 						}
@@ -381,8 +380,7 @@ a.link-not-bold {
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
-	.border-top-radius(5px);
-	.border-bottom-radius(5px);
+	border-radius: 5px;
 
     &:before {
 		.vertical-align();
@@ -485,7 +483,7 @@ a.link-not-bold {
 	.box-shadow(none) !important;
 	display: none;
 
-	.btn-default { position: relative; &:hover {margin-top: -5px;}}
+	.btn-default { position: relative; border-radius: 5px; &:hover {margin-top: -5px;}}
 	
 	@media (min-width: @screen-tablet) {
 
@@ -514,8 +512,7 @@ a.link-not-bold {
 	color: @white !important;
 	background: @blue !important;
 	border: 1px @white solid !important;
-	.border-top-radius(50px);
-	.border-bottom-radius(50px);
+	border-radius: 50px;
 	cursor: pointer;
 	.transition(all 300ms ease-out);
 	
@@ -745,7 +742,7 @@ a.link-not-bold {
     	bottom: 0;
     	right: 0;
         position: absolute;
-        margin-top: 600px;
+        margin-top: 0; /*600px*/
         .opacity(0);
         background: @blue-dark;
         border-radius: 5px;
@@ -809,9 +806,7 @@ hr {
 	width: 30px;
 	height: 2px;
 	padding: 0;
-	
-	.border-top-radius(50px);
-	.border-bottom-radius(50px);
+	border-radius: 50px;
 	
 	&.left { margin-left: 0; margin-right: auto; }
 	&.center { margin-left: auto; margin-right: auto; }
@@ -826,6 +821,7 @@ a.tile {
 	font-size: 22px;
 	height: 80px;
 	color: @gray-dark;
+	border-radius: 5px;
 	background: @gray-light;
 	text-decoration: none;
 
@@ -855,8 +851,7 @@ a.tile {
 		font-size: 24px !important;
 		color: @gray-light;
 		background: @gray-dark;
-		.border-top-radius(50px);
-		.border-bottom-radius(50px);
+		border-radius: 50px;
 		font-size: 28px;
 		padding: 13px 15px;
 		margin: 0 12px 0 20px;
@@ -910,8 +905,7 @@ a.tile {
 
 .colors-item {
 	border: 3px transparent solid;
-	.border-top-radius(50px);
-	.border-bottom-radius(50px);
+	border-radius: 50px;
 	
 	&:hover {
 		border: 3px #ffffff solid;
@@ -998,8 +992,7 @@ a[rel="fluidbox"] {
 .container-form {
 	
 	padding: 10px 10px 30px 10px;
-	.border-top-radius(5px);
-	.border-bottom-radius(5px);
+	border-radius: 5px;
 	background: @white;
 	.opacity(.9);
 	.transition(all 300ms ease-out);
@@ -1090,8 +1083,7 @@ a[rel="fluidbox"] {
 		background-color: @gray-light;
 		color: @gray-dark;
 		border: none;
-		.border-top-radius(5px);
-		.border-bottom-radius(5px);
+		border-radius: 5px;
 		transition: all .2s ease-in-out;
 	} 
 
@@ -1517,13 +1509,15 @@ section.top {
 	font-size: 100px;
 
 	a {
+		display: block;
 		color: @black;
-		.opacity(.25);
+		.opacity(.25) !important;
 		.transition(all 200ms ease-out);
 
 		&:hover {
-			.opacity(1);
+			.opacity(1) !important;
 			color: @black;
+			text-decoration: none;
 		};
 	}
 }
@@ -1803,7 +1797,24 @@ section.case-study {
 
 		i { color: @white; }
 	}
+}
 
+.page-nav-left {
+
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.page-nav-right {
+
+	border-radius: 5px;
+
+	@media (min-width: @screen-tablet) {
+
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+
+	}
 }
 
 footer {
@@ -1824,8 +1835,7 @@ a.link-top {
 	width: 42px;
 	padding: 5px 0 0 0; 
 	margin: 0 auto 30px auto;
-	.border-top-radius(50px);
-	.border-bottom-radius(50px);
+	border-radius: 50px;
 	.scale (1, 1);
 	.transition(all 200ms ease-out);
 
