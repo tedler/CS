@@ -19,6 +19,7 @@ p.bigger { font-size: 22px; }
 .color-gray-dark { color: @gray-dark;}
 .color-white { color: @white;}
 .color-red { color: @red;}
+.color-black { color: @black;}
 
 .bg-blue { background: @blue;}
 .bg-blue-light { background: @blue-light;}
@@ -416,7 +417,7 @@ a.link-not-bold {
 		    	line-height: 64px;
 		    	span { font-size: 64px; }
 		    }
-			p { font-size: 24px; }
+			p { font-size: 28px; }
 	}
 
 	@media (min-width: @screen-desktop) {
@@ -437,7 +438,7 @@ a.link-not-bold {
 		    	line-height: 50px;
 		    	span { font-size: 52px; }
 		    }
-			p { font-size: 22px; }
+			p { font-size: 24px; }
 	}	
 }
 
@@ -530,7 +531,7 @@ a.link-not-bold {
 	font-weight: bold;
 	padding: 1px 16px 3px 16px;
 	border: 2px @blue-light solid !important;
-	margin-top: 14px;
+	margin-top: 16px;
 
 	&:hover {
 		color: @blue !important;
@@ -565,32 +566,32 @@ a.link-not-bold {
 	padding: 0 60px;
 	margin: 60px 0 60px 0;
 
+	h4 { padding: 0 0 20px 0; margin: 0; color: @gray; }
+	p { font-size: 22px;  padding: 0; margin: 0;}
+
 	@media (min-width: @screen-tablet) {
 
 		padding: 60px 30px 60px 60px;
 		margin: 0;
+
+		h4 { padding: 10px 0 20px 0;}
 	}
 
 	@media (min-width: @screen-desktop) {
 
 		padding: 60px 30px 30px 30px;
+
+		h4 { padding: 0 0 20px 0; }
+		p { font-size: 20px; }
+
 	}
 
 	@media (min-width: @screen-lg-desktop) {
 
 		padding: 60px 30px 30px 30px;
-	}
 
-	h4 {
-		padding: 0 0 20px 0;
-		margin: 0;
-	}
-
-	p {
-
-		padding: 0;
-		margin: 0;
-
+		h4 { padding: 30px 0 20px 0; }
+		p { font-size: 22px; }
 	}
 
 }
@@ -766,7 +767,7 @@ a.link-not-bold {
     &:hover .project-img {
 
 		.scale(1,1);
-        .opacity(.2);
+        .opacity(.4);
         cursor: pointer;
 
     }
@@ -1475,8 +1476,8 @@ section.top {
 		font-size: 28px;
 		font-weight: normal;
 		margin: 10px 0 0 0;
-		background: @black;
 		color: @white;
+		background: @black;
 		border-radius: 5px;
 		padding: 6px 40px 8px 40px;
 	}
