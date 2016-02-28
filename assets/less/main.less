@@ -956,13 +956,6 @@ a[rel="fluidbox"] {
 
 }
 
-/*#typed {
-	background: @black;
-	color: @white;
-	border-radius: 5px;
-	padding: 6px 40px 8px 40px;
-}*/
-
 .typed-cursor{
 	display: none;
     opacity: 1;
@@ -1463,6 +1456,59 @@ section.top {
 		font-weight: 300;
 		padding: 0;
 		margin: 10px 0 10px 0;
+		span { font-weight: normal; }
+
+		&.short {
+			font-size: 90px;
+			font-weight: normal;
+		}
+	}
+
+	p {
+		display: none;
+		font-size: 28px;
+		font-weight: normal;
+		margin: 0;
+
+		span { font-weight: bold; }
+
+		span#typed {
+
+			font-size: 17px;
+			letter-spacing: 3px;
+			color: @white;
+			background: @black;
+			border-radius: 5px;
+			padding: 7px 26px 8px 26px;
+		}
+	}
+
+	@media (min-width: @screen-tablet) {
+
+	    h1 { font-size: 100px; }
+		p { font-size: 24px; }
+		
+	}
+
+	@media (min-width: @screen-desktop) {
+
+	    h1 { font-size: 60px; span {display: inline; }}
+		p { font-size: 24px; display: inline-block !important; }
+		i { display: block; }
+	}
+
+	@media (min-width: @screen-lg-desktop) {
+
+	    h1 { font-size: 70px; }
+		p { font-size: 24px; }
+	}
+
+/*    h1 {
+
+		font-size: 60px;
+		font-weight: 300;
+		padding: 0;
+		margin: 10px 0 10px 0;
 		span { display: block; }
 
 		&.short {
@@ -1500,7 +1546,7 @@ section.top {
 
 	    h1 { font-size: 70px; }
 		p { font-size: 26px; }
-	}
+	}*/
 
 }
 
@@ -1559,11 +1605,11 @@ section.top {
 			top: 0;
 			left: 0;
 			width: 100%;
-			color: @black;
+			color: @white;
 			font-size: 24px;
 			font-weight: normal;
 			padding: 20px 0 20px 64px;
-			background: @white;
+			background: @black;
 			border-top-left-radius: 5px;
 			border-bottom-left-radius: 5px;
 			box-shadow: 2px 2px 4px rgba(59,74,93,.25);
@@ -1576,14 +1622,14 @@ section.top {
 				display: inline-block;
 				width: 10px;
 				height: 10px;
-				background: @blue;
+				background: @white;
 				border-radius: 10px;
 			}
 
 			&::after {
 				
 				content: "";
-				border: 6px solid @blue;
+				border: 6px solid @white;
 				background: transparent;
 				-webkit-border-radius: 60px;
 				-moz-border-radius: 60px;
