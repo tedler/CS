@@ -21,11 +21,28 @@
 
 <section class="top va" style="background-image: url(images/bg-top-contacts.jpg)">
     
-    <div class="centered fadeout bumpTop">
+
+    <div class="container centered fadeout bumpTop">
+      
+      <div class="row">
+
+        <div class="col-md-6 align-md-center">
+          
+          <h1 class="short"><span>contacts</span></h1>
+          <p>several ways to get in touch with me</p>
+          <i class="fa fa-angle-down fa-2x t40 color-black hidden-xs hidden-sm"></i>
+
+        </div>
+        <div class="col-md-6"><img src="images/top-home.png" alt=""></div>
+      </div>
+
+    </div>
+
+<!--     <div class="centered fadeout bumpTop">
       <h1 class="short">contacts</h1>
       <p>here are a handful of projects that showcase my skills and passion</p>
       <i class="fa fa-angle-down fa-2x t40 color-blue"></i>
-    </div>
+    </div> -->
 
 </section>
   
