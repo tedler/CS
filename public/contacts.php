@@ -38,12 +38,6 @@
 
     </div>
 
-<!--     <div class="centered fadeout bumpTop">
-      <h1 class="short">contacts</h1>
-      <p>here are a handful of projects that showcase my skills and passion</p>
-      <i class="fa fa-angle-down fa-2x t40 color-blue"></i>
-    </div> -->
-
 </section>
   
   <nav id="top-nav" class="navbar navbar-default navbar-fixed-top">
@@ -64,9 +58,9 @@
           <li><a href="works.html" class="animsition-link">works<span></span></a></li>
           <li class="active"><a href="contacts.php" class="animsition-link">contacts<span></span></a></li>
           <li class="hidden-xs"><div class="nav-separator"></div></li>
-          <li class="nav-social hidden-xs"><a href="#contact"><i class="fa fa-facebook"></i></a></li>
-          <li class="nav-social hidden-xs"><a href="#contact"><i class="fa fa-dribbble"></i></a></li>
-          <li class="nav-social hidden-xs"><a href="#contact"><i class="fa fa-linkedin"></i></a></li>
+          <li class="nav-social"><a href="#contact"><i class="fa fa-facebook"></i></a></li>
+          <li class="nav-social"><a href="#contact"><i class="fa fa-dribbble"></i></a></li>
+          <li class="nav-social"><a href="#contact"><i class="fa fa-linkedin"></i></a></li>
           
         </ul>
 
