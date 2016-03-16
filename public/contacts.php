@@ -33,7 +33,7 @@
           <i class="fa fa-angle-down fa-2x t40 color-black hidden-xs hidden-sm"></i>
 
         </div>
-        <div class="col-md-6"><img src="images/top-home.png" alt=""></div>
+        <div class="col-md-6"><img src="images/top-contacts.png" alt=""></div>
       </div>
 
     </div>
