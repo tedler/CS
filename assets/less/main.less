@@ -1790,14 +1790,23 @@ section.case-study {
 
 	p {
 		font-size: 22px;
-		padding-top: 14px;
+		padding: 14px 40px 0 40px;
+
+		@media (min-width: @screen-tablet) { padding: 14px 0 0 0; }
+
 	}
 
 	.cs-header {
 
 		text-align: left;
-		hr { margin-left: 0; margin-right: auto; }
-
+		h4 { margin-left: 40px; }
+		hr { margin-left: 40px; margin-right: auto; }
+		
+		@media (min-width: @screen-tablet) {
+			
+			h4 { margin-left: 0; }
+			hr { margin-left: 0; }
+		}
 
 		@media (min-width: @screen-desktop) {
 
@@ -1923,23 +1932,28 @@ footer {
 		text-align: center;
 		height: 42px;
 		width: 42px;
-		padding: 5px 0 0 0; 
+		padding: 3px 0 0 0; 
 		margin: 40px auto 0 auto;
 		border-radius: 50px;
-		background: @black-light;
+		border: 2px @black solid;
+		background: @black-dark;
 		.scale (1, 1);
 		.transition(all 200ms ease-out);
 
 		@media (min-width: @screen-tablet) { margin: 80px 0 0 auto; }
 
 		i {
-			color: @black-dark;
+			color: @black;
 			font-weight: bold;
 		}
 
 		&:hover {
-			background: @white;
+			background: @black;
 			.scale (1.1, 1.1);
+
+			i {
+				color: @black-dark;
+			}
 
 		}
 	}
