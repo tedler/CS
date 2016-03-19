@@ -147,7 +147,7 @@
                  <p id="contact-message-sent" class="display-none align-sm-center"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, message is sent!</p>
                </div>
                <div class="col-md-4 form-button">
-                 <a class="btn btn-default" id="contact_send">send</a>
+                 <a class="btn btn-default" id="contact_send"><span class="btn-dot"></span>send</a>
                </div>
             </div>
 
