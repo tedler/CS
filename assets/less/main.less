@@ -118,30 +118,6 @@ a.link-not-bold {
 	margin-top: 70px;
 }
 
-.top-image {
-	margin: 0 auto; 
-	width:320px;
-	height:160px;
-}
-
-.top-image-home { background:url(../images/top-home.svg)top left no-repeat; }
-.top-image-about { background:url(../images/top-about.svg)top left no-repeat; }
-.top-image-works { background:url(../images/top-works.svg)top left no-repeat; }
-.top-image-contacts { background:url(../images/top-contacts.svg)top left no-repeat; }
-
-.top-image-404 {
-	margin: 0 auto;
-	width:320px;
-	height:252px;
-	background:url(../images/404.svg)top left no-repeat;
-
-	a {
-		display: block;
-		width:320px;
-		height:252px;
-	}
-}
-
 /*   NAVIGATION   */
 
 .navbar-default {
@@ -1826,27 +1802,22 @@ section.case-study {
 
 	p {
 		font-size: 22px;
-		padding: 14px 40px 0 40px;
+		padding: 14px 40px 0 45px;
 
-		@media (min-width: @screen-tablet) { padding: 14px 0 0 0; }
+		@media (min-width: @screen-desktop) { padding: 14px 0 0 0; }
 
 	}
 
 	.cs-header {
 
 		text-align: left;
-		h4 { margin-left: 40px; }
-		hr { margin-left: 40px; margin-right: auto; }
-		
-		@media (min-width: @screen-tablet) {
-			
-			h4 { margin-left: 0; }
-			hr { margin-left: 0; }
-		}
+		h4 { margin-left: 45px; }
+		hr { margin-left: 45px; margin-right: auto; }
 
 		@media (min-width: @screen-desktop) {
 
 		text-align: right;
+		h4 { margin-left: 0; }
 		hr { margin-left: auto; margin-right: 0; }
 		}
 
@@ -2075,10 +2046,5 @@ h4.icon-top {
 
 }
 
-.os-animation, .staggered-animation{
-  opacity: 0;
-}
-
-.os-animation.animated, .staggered-animation.animated{
-    opacity: 1;
-}
+.os-animation,.staggered-animation{ opacity: 0; }
+.os-animation.animated,.staggered-animation.animated{ opacity: 1; }

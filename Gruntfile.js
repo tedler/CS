@@ -58,6 +58,7 @@ module.exports = function(grunt) {
           'assets/js/jquery.bxslider.min.js',
           'assets/js/jquery.ba-throttle-debounce.min.js',
           'assets/js/jquery.fluidbox.min.js',
+          'assets/js/modernizr-custom.js',
           'assets/js/typed.js',
           'assets/js/script.js'
         ],

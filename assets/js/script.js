@@ -457,9 +457,20 @@ $(document).ready(function() {
 	        });
 	  });
 	}
+	
 
-	 onScrollInit( $('.os-animation') );
-	 onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+	if(!Modernizr.touchevents){
+
+		 onScrollInit( $('.os-animation') );
+		 onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+
+	} else { 
+
+		$('.os-animation').css({'opacity': 1});
+		$('.staggered-animation').css({'opacity': 1});
+
+	}
+
 
 
 });
