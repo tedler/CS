@@ -444,7 +444,10 @@ $(document).ready(function() {
 	        osElement.css({
 	          '-webkit-animation-delay':  osAnimationDelay,
 	          '-moz-animation-delay':     osAnimationDelay,
-	          'animation-delay':          osAnimationDelay
+	          'animation-delay':          osAnimationDelay,
+	          // '-webkit-animation-duration': '.6s',
+	          // 'animation-duration': '.6s',
+
 	        });
 
 	        var osTrigger = ( trigger ) ? trigger : osElement;
@@ -457,17 +460,19 @@ $(document).ready(function() {
 	        });
 	  });
 	}
-	
+
 
 	if(!Modernizr.touchevents){
 
 		 onScrollInit( $('.os-animation') );
-		 onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+		 onScrollInit( $('.os-animation-item'), $('.os-animation-box') );
+		 onScrollInit( $('.os-animation-item1'), $('.os-animation-box1') );
+		 onScrollInit( $('.os-animation-item2'), $('.os-animation-box2') );
 
 	} else { 
 
 		$('.os-animation').css({'opacity': 1});
-		$('.staggered-animation').css({'opacity': 1});
+		$('.os-animation-item').css({'opacity': 1});
 
 	}
 
