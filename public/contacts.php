@@ -19,7 +19,7 @@
 
 <header class="animsition" data-animsition-in-class="fade-in-down" data-animsition-out-class="fade-out-up" data-animsition-in-duration="1000" data-animsition-out-duration="500">
 
-<section class="top va" style="background-image: url(images/bg-top-contacts.jpg)">
+<section class="top va os-animation-box-1" style="background-image: url(images/bg-top-contacts.jpg)">
     
 
     <div class="container centered fadeout bumpTop">
@@ -28,12 +28,12 @@
 
         <div class="col-md-6 align-md-center">
           
-          <h1 class="short"><span>contacts</span></h1>
-          <p>several ways to get in touch with me</p>
-          <i class="fa fa-angle-down fa-2x t40 color-black hidden-xs hidden-sm"></i>
+          <h1 class="short os-animation-item-1" data-os-animation="fadeInUp" data-os-animation-delay="1s"><span>contacts</span></h1>
+          <p class="os-animation-item-1" data-os-animation="fadeInUp" data-os-animation-delay="1.1s">several ways to get in touch with me</p>
+          <i class="fa fa-angle-down fa-2x t40 color-black hidden-xs hidden-sm os-animation-item-1" data-os-animation="fadeInUp" data-os-animation-delay="1.2s"></i>
 
         </div>
-        <div class="col-md-6"><img src="images/top-contacts.svg" alt=""></div>
+        <div class="col-md-6 os-animation-item-1" data-os-animation="fadeInUp" data-os-animation-delay="1.6s"><img src="images/top-contacts.svg" alt=""></div>
       </div>
 
     </div>
@@ -79,18 +79,18 @@
       <div class="row t80 b80">
 
         <div class="col-sm-4"></div>
-        <div class="col-sm-8"><h3 class="color-white align-sm-center">I specialize in graphic design and illustration for editorial projects both print and digital.</h3></div>
+        <div class="col-sm-8"><h3 class="color-white align-sm-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="2s">I specialize in graphic design and illustration for editorial projects both print and digital.</h3></div>
         
       </div>
 
     </div>
 
 
-  <div class="container-fluid">
+  <div class="container-fluid os-animation-box-2">
     <div class="container">
       <div class="row b80">
         <div class="col-sm-4">
-          <div class="container-details">
+          <div class="container-details os-animation-item-2" data-os-animation="fadeInLeft" data-os-animation-delay="0s">
 
             <h4>contact details</h4>
             <p>183 Broken Head Rd,<br>Suffolk Park, NSW, 2481</p>
@@ -103,7 +103,7 @@
         </div>
         
         <div class="col-sm-8">
-          <div class="container-form">
+          <div class="container-form os-animation-item-2" data-os-animation="fadeInRight" data-os-animation-delay="0s">
 
           <form id="contact" method="post" action="">
 
@@ -111,17 +111,17 @@
               <div class="col-md-5">
                   <div class="container-form-box">
 
-                    <div>
+                    <div class="os-animation-item-2" data-os-animation="zoomIn" data-os-animation-delay="0.8s">
                       <label for="nameFrom">name</label>
                       <input type="text" name="nameFrom" id="nameFrom" value="<?= $_POST['nameFrom']; ?>"/>
                     </div>
 
-                    <div>
+                    <div class="os-animation-item-2" data-os-animation="zoomIn" data-os-animation-delay="0.9s">
                       <label for="emailFrom">email</label>
                       <input type="email" name="emailFrom" id="emailFrom" value="<?= $_POST['emailFrom']; ?>"/>
                     </div>
                     
-                    <div>
+                    <div class="os-animation-item-2" data-os-animation="zoomIn" data-os-animation-delay="1.0s">
                       <label for="captcha" id="captcha_label"></label>
                       <input type="number" name="captcha" id="captcha"/>
                     </div>
@@ -132,7 +132,7 @@
               <div class="col-md-7">
                 <div class="container-form-box">
                 
-                  <div>
+                  <div class="os-animation-item-2" data-os-animation="zoomIn" data-os-animation-delay="1.1s">
                     <label for="message">message</label>
                     <textarea rows="7" cols="50" name="message" id="message"><?= $_POST['message']; ?></textarea>
                   </div>
@@ -146,7 +146,7 @@
                  <p id="contact-message-required" class="display-none align-sm-center"><i class="fa fa-exclamation-circle color-red"></i>&nbsp;&nbsp;Please fill in the required fields.</p>
                  <p id="contact-message-sent" class="display-none align-sm-center"><i class="fa fa-check-circle color-blue"></i>&nbsp;&nbsp;Thank you, message is sent!</p>
                </div>
-               <div class="col-md-4 form-button">
+               <div class="col-md-4 form-button os-animation-item-2" data-os-animation="zoomIn" data-os-animation-delay="1.2s">
                  <a class="btn btn-default" id="contact_send"><span class="btn-dot"></span>send</a>
                </div>
             </div>
