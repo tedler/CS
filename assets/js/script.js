@@ -445,6 +445,7 @@ $(document).ready(function() {
 	          '-webkit-animation-delay':  osAnimationDelay,
 	          '-moz-animation-delay':     osAnimationDelay,
 	          'animation-delay':          osAnimationDelay,
+	          
 	          // '-webkit-animation-duration': '.6s',
 	          // 'animation-duration': '.6s',
 
@@ -464,21 +465,18 @@ $(document).ready(function() {
 
 	if(!Modernizr.touchevents){
 
-		 onScrollInit( $('.os-animation') );
-		 onScrollInit( $('.os-animation-item-1'), $('.os-animation-box-1') );
-		 onScrollInit( $('.os-animation-item-2'), $('.os-animation-box-2') );
-		 onScrollInit( $('.os-animation-item-3'), $('.os-animation-box-3') );
-		 onScrollInit( $('.os-animation-item-4'), $('.os-animation-box-4') );
-		 onScrollInit( $('.os-animation-item-5'), $('.os-animation-box-5') );
+		onScrollInit( $('.os-animation') );
+
+		for (i = 1; i < 11; i++) {
+
+		onScrollInit( $("[class*='os-animation-item-" + i + "']"), $("[class*='os-animation-box-" + i + "']") );
+
+		}
 
 	} else { 
 
 		$('.os-animation').css({'opacity': 1});
-		$('.os-animation-item-1').css({'opacity': 1});
-		$('.os-animation-item-2').css({'opacity': 1});
-		$('.os-animation-item-3').css({'opacity': 1});
-		$('.os-animation-item-4').css({'opacity': 1});
-		$('.os-animation-item-5').css({'opacity': 1});
+		$("[class*='os-animation-item-']").css({'opacity': 1});
 
 	}
 
