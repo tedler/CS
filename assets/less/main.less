@@ -56,7 +56,7 @@ p.bigger { font-size: 22px; }
 .gr-gag-btm {background: #729360; background: linear-gradient(to bottom, #729360, #63874f); }
 .gr-tedler-top {background: #98b1b6; background: linear-gradient(to bottom, #85a2a8, #98b1b6); }
 .gr-tedler-btm {background: #98b1b6; background: linear-gradient(to bottom, #98b1b6, #85a2a8); }
-.gr-cs { background: @gray-light; background: linear-gradient(to bottom, @white, @gray-light); }
+.gr-cs { background: @gray-light; background-image: url(../images/bg-top-cs.svg), linear-gradient(to bottom, @white, @gray-light); }
 
 .t10 { margin-top: 10px; }
 .b10 { margin-bottom: 10px; }
@@ -1486,6 +1486,9 @@ section.top {
 	top:0;
 	text-align: center;
 	z-index: 0;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
 
     h1 {
 
