@@ -171,7 +171,7 @@
   <div class="container-fluid bg-blue-dark">
     <div class="row">
       
-        <div class="col-sm-12 container-googlemap os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+        <div class="col-sm-12 container-googlemap os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s">
   
           <div class="container-googlemap-map" id="googleMap">
             

@@ -33,20 +33,27 @@ p.bigger { font-size: 22px; }
 .bg-black { background: @black; }
 
 .bg-drexy { background: #5a9ba1 !important; }
+.bg-drexy-pattern { background: url(../images/bg-drexy-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-qoipr { background: #323a45 !important; }
+.bg-qoipr-pattern { background: url(../images/bg-qoipr-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-cwa { background: #0084ac !important; }
+.bg-cwa-pattern { background: url(../images/bg-cwa-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-bd { background: #3e3e3e !important; }
+.bg-bd-pattern { background: url(../images/bg-bd-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-gw { background: #2a3741 !important; }
+.bg-gw-pattern { background: url(../images/bg-gw-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-gag { background: #63874f !important; }
+.bg-gag-pattern { background: url(../images/bg-gag-pattern.png) repeat top left; background-size: 198px 198px !important; }
 .bg-tedler { background: #85a2a8 !important; }
+.bg-tedler-pattern { background: url(../images/bg-tedler-pattern.png) repeat top left; background-size: 198px 198px !important; }
 
-.bg-drexy-intro { background: #5a9ba1; background: url(../images/bg-into-cs.svg), #5a9ba1; }
-.bg-qoipr-intro { background: #323a45; background: url(../images/bg-into-cs.svg), #323a45;}
-.bg-cwa-intro { background: #0084ac; background: url(../images/bg-into-cs.svg), #0084ac;}
-.bg-bd-intro { background: #3e3e3e; background: url(../images/bg-into-cs.svg), #3e3e3e;}
-.bg-gw-intro { background: #2a3741; background: url(../images/bg-into-cs.svg), #2a3741;}
-.bg-gag-intro { background: #63874f; background: url(../images/bg-into-cs.svg), #63874f;}
-.bg-tedler-intro { background: #85a2a8; background: url(../images/bg-into-cs.svg), #85a2a8;}
+.bg-drexy-intro { background: #5a9ba1; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#5a9ba1, 5%), lighten(#5a9ba1, 3%)); }
+.bg-qoipr-intro { background: #323a45; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#323a45, 5%), lighten(#323a45, 3%));}
+.bg-cwa-intro { background: #0084ac; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#0084ac, 5%), lighten(#0084ac, 3%));}
+.bg-bd-intro { background: #3e3e3e; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#3e3e3e, 5%), lighten(#3e3e3e, 3%));}
+.bg-gw-intro { background: #2a3741; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#2a3741, 5%), lighten(#2a3741, 3%));}
+.bg-gag-intro { background: #63874f; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#63874f, 5%), lighten(#63874f, 3%));}
+.bg-tedler-intro { background: #85a2a8; background: url(../images/bg-into-cs.svg), linear-gradient(to bottom, darken(#85a2a8, 5%), lighten(#85a2a8, 3%));}
 
 .gr-home-top {background: @blue; background-image: url(../images/bg-intro-box.svg), linear-gradient(to bottom, @blue-dark, #5c9cb6); }
 .gr-home-btm {background: @blue; background: url(../images/bg-blue-pattern.png) repeat top left; background-size: 198px 198px !important; }
@@ -465,7 +472,7 @@ a.link-not-bold {
 
 .intro-cs {
 
-	padding: 80px 50px 80px 50px;
+	padding: 100px 50px 110px 50px;
 
     h1 {
 	    color: @white;
@@ -480,19 +487,19 @@ a.link-not-bold {
 
     @media (min-width: @screen-tablet) {
 
-    		padding: 100px 100px 100px 100px;
+    		padding: 160px 100px 100px 100px;
     	    h1 { font-size: 90px; &.small {font-size: 80px;} }
     }
 
     @media (min-width: @screen-desktop) {
 
-    	    padding: 100px 100px 100px 90px;
+    	    padding: 120px 100px 120px 90px;
     	    h1 { font-size: 80px; &.small {font-size: 65px;} }
     }
 
     @media (min-width: @screen-lg-desktop) {
 
-    	    padding: 140px 120px 130px 120px;
+    	    padding: 140px 120px 140px 120px;
     	    h1 { font-size: 90px; &.small {font-size: 70px;} }
     }
 
@@ -562,6 +569,7 @@ span.btn-dot {
 	font-weight: bold;
 	padding: 1px 16px 3px 16px;
 	border: 2px @white solid !important;
+	background: transparent !important;
 	margin-top: 16px;
 
 	&:hover {
