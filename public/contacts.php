@@ -79,7 +79,9 @@
       <div class="row t80 b80">
 
         <div class="col-sm-4"></div>
-        <div class="col-sm-8"><h3 class="color-white align-sm-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="2s">I specialize in graphic design and illustration for editorial projects both print and digital.</h3></div>
+        <div class="col-sm-8"><h3 class="color-white align-sm-center os-animation" data-os-animation="fadeInUp" data-os-animation-delay="2s">
+        If you have any questions, please feel free to drop me a line. I'll get back to you as soon as I can.
+        </h3></div>
         
       </div>
 
