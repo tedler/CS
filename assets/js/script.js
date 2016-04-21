@@ -31,18 +31,22 @@ $(document).ready(function() {
 
 // Toggle Available tile on touchscreen devices
 	
-	$(".available-top").on("click", function () {
+	if(Modernizr.touchevents){
 
-		if ($(".available-box").css("margin-right") == "-176px") {
+		$(".available-top").on("click", function () {
 
-			$(".available-box").css("margin-right","0px");
+			if ($(".available-box").css("margin-right") == "-176px") {
 
-		} else {
+				$(".available-box").css("margin-right","0px");
 
-			$(".available-box").css("margin-right","-176px");
+			} else {
 
-		}
-	});
+				$(".available-box").css("margin-right","-176px");
+
+			}
+		});
+
+	}
 
 
 // OnScroll navbar resizer
