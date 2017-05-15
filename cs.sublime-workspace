@@ -100,6 +100,7 @@
 			"settings":
 			{
 				"buffer_size": 12704,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -198,6 +199,7 @@
 			"settings":
 			{
 				"buffer_size": 36223,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -296,6 +298,8 @@
 	],
 	"file_history":
 	[
+		"/Users/tedler/Desktop/Mizko _ Freelance UX _ UI Designer from Sydney..html",
+		"/Users/tedler/Desktop/Mizko _ Freelance UX _ UI Designer from Sydney._files/style.css",
 		"/Users/tedler/Documents/zProjects/Tedler/html/togo.html",
 		"/Users/tedler/Documents/zProjects/Tedler/html/js/scripts.js",
 		"/Users/tedler/Desktop/daily-counter-countdown.html",
@@ -421,9 +425,7 @@
 		"/Users/tedler/Desktop/html/default.html",
 		"/Users/tedler/Desktop/html/contact-us.html",
 		"/Users/tedler/Documents/zProjects/+/footballnsw.com.au/layouts/default/index.php",
-		"/Users/tedler/Documents/zProjects/BookingDirect/BookingDirect.sublime-project",
-		"/Users/tedler/Desktop/addresses.txt",
-		"/Users/tedler/Desktop/Sketch/Sketch.txt"
+		"/Users/tedler/Documents/zProjects/BookingDirect/BookingDirect.sublime-project"
 	],
 	"find":
 	{
@@ -446,6 +448,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1",
+			".css",
+			"-2px",
+			"-2",
+			"75",
+			"-4",
+			"bold",
+			"38",
+			"52",
+			"normal",
+			"38",
+			"branding",
+			"38",
+			"0px",
+			"42",
+			"3px",
+			"3",
+			"44",
+			"24",
+			"3px",
+			"4px",
 			"compiled",
 			"className",
 			"container",
@@ -552,28 +575,7 @@
 			"left",
 			"center",
 			"left",
-			"Up",
-			"fade",
-			"og:image",
-			"og:site_name",
-			"alternate",
-			"referrer",
-			"html5.js",
-			"utf-8",
-			"robots",
-			"public",
-			"Cache-control",
-			"msapplication-config",
-			"viewport",
-			"ie=edge",
-			"6",
-			"8",
-			"bg-intro-box.png",
-			"typed",
-			"home",
-			".top-",
-			"top-",
-			"icons"
+			"Up"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -593,7 +595,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -609,8 +611,8 @@
 						"selection":
 						[
 							[
-								1039,
-								1039
+								735,
+								735
 							]
 						],
 						"settings":
@@ -771,7 +773,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1555,7 +1557,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -2042,8 +2044,8 @@
 						"selection":
 						[
 							[
-								980,
-								980
+								60,
+								60
 							]
 						],
 						"settings":
@@ -2123,7 +2125,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 95.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
