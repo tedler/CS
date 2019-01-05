@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"FON",
+				"font-weight"
+			],
+			[
 				"font-le",
 				"font-style"
 			],
@@ -96,10 +100,21 @@
 	"buffers":
 	[
 		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Case Study : Drexy Apps</title>\n  <link href=\"css/style.css\" rel=\"stylesheet\">\n</head>\n\n<body>\n\n<div id=\"top\" class=\"top-mark\"></div>\n\n<header class=\"animsition\" data-animsition-in-class=\"fade-in-down\" data-animsition-out-class=\"fade-out-up\" data-animsition-in-duration=\"1000\" data-animsition-out-duration=\"500\">\n\n<section class=\"top ba gr-cs\">\n\n    <div class=\"bottomed fadeout visable-xs visable-sm hidden-md hidden-lg bumpTop\">\n\n        <img src=\"images/cs-drexy/featured-sm.png\" width=\"100%\" height=\"auto\" alt=\"\"> <!-- featured-sm -->\n\n    </div>\n\n    <div class=\"bottomed fadeout hidden-xs hidden-sm bumpTop\">\n\n        <div class=\"os-animation\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"1s\">\n          <img src=\"images/cs-drexy/featured.png\" width=\"100%\" height=\"auto\" alt=\"\"> <!-- featured -->\n        </div>\n\n    </div>\n\n    <div class=\"arrow arrow-left va fadeout hidden-xs\"><div class=\"centered\"><a href=\"cs-tedler.html\" class=\"animsition-link centered\"><i class=\"fa fa-angle-left\"></i></a></div></div>\n    <div class=\"arrow arrow-right va fadeout hidden-xs\"><div class=\"centered\"><a href=\"cs-qoipr.html\" class=\"animsition-link\"><i class=\"fa fa-angle-right\"></i></a></div></div>\n\n</section>\n\n  <nav id=\"top-nav\" class=\"navbar navbar-default navbar-fixed-top\">\n    <div class=\"container\">\n      <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\" aria-controls=\"navbar\">\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n        </button>\n\n        <a class=\"navbar-brand animsition-link\" href=\"index.html\"><img src=\"images/logo-ted-lermontov.svg\" alt=\"\"></a>\n      </div>\n      \n      <div id=\"navbar\" class=\"navbar-collapse collapse\">\n        \n        <ul class=\"nav navbar-nav navbar-right\">\n          <li><a href=\"about.html\" class=\"animsition-link\">about<span></span></a></li>\n          <li><a href=\"works.html\" class=\"animsition-link taphover\">works<span></span></a></li>\n          <li><a href=\"contacts.php\" class=\"animsition-link\">contacts<span></span></a></li>\n          <li class=\"hidden-xs\"><div class=\"nav-separator\"></div></li>\n          <li class=\"nav-social\"><a href=\"#contact\"><i class=\"fa fa-facebook\"></i></a></li>\n          <li class=\"nav-social\"><a href=\"#contact\"><i class=\"fa fa-dribbble\"></i></a></li>\n          <li class=\"nav-social\"><a href=\"#contact\"><i class=\"fa fa-linkedin\"></i></a></li>\n        </ul>\n\n      </div>\n    </div>\n  </nav>\n\n</header>\n\n<div class=\"content animsition\" data-animsition-in-class=\"fade-in-up\" data-animsition-out-class=\"fade-out-down\" data-animsition-in-duration=\"1000\" data-animsition-out-duration=\"500\">\n\n  <section class=\"intro os-animation-box-1\">\n    <div class=\"container\">\n\n      <div class=\"row\">\n\n        <div class=\"col-sm-12 col-md-6 os-animation-item-1\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"1.4s\">\n          <div class=\"intro-box intro-cs bg-drexy-intro\">\n            <div class=\"centered\">\n              <h1>drexy</h1>\n              <hr class=\"bg-white t40 b40\">\n              <p>Buy-Sell-Swap mobile application for iOS &amp; Android platforms</p>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-6 intro-copy os-animation-item-1\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"1.6s\">\n          \n          <div class=\"btn-group btn-group-drexy\" role=\"group\">\n            <a href=\"#branding\" class=\"btn btn-default\">branding</a>\n            <a href=\"#ux-design\" class=\"btn btn-default\">UX design</a>\n            <a href=\"#ui-design\" class=\"btn btn-default\">UI design</a>\n            <a class=\"btn btn-default btn-inactive\">front-end</a>\n          </div>\n\n          <h4>brief</h4>\n\n          <p>The main goal was to create a buy-sell-swap marketplace for fashion outfits and secondhand clothing. Design a new way of selling out the old wardrobe, buying new clothes and looking good without spending a fortune. Make awesome, stylish and everyday use apps for iOS and Android platforms.</p>\n\n        </div>   \n\n      </div>\n\n    </div>\n  </section>\n\n\n  <section id=\"branding\" class=\"case-study color-white bg-drexy-pattern os-animation-box-2\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-2\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-white\">branding</h4>\n              <hr class=\"bg-gray-light t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>Starting with a logo, my challenge was to create a clean and unique style to highlight the modern tunes of the online fashion industry. Sets of required UI and category icons were designed to bring a more &quot;human&quot; feel to the product.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-2\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/branding.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section id= \"ux-design\" class=\"case-study color-gray-dark bg-gray-light os-animation-box-3\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-3\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">research</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-3\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/research.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-light\">\n    <div class=\"container os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0s\">\n      \n      <div class=\"row b80\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">personas</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/personas.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-light\">\n    <div class=\"container os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0s\">\n      \n      <div class=\"row b80\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">storytelling</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/storytelling.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-light\">\n    <div class=\"container os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0s\">\n      \n      <div class=\"row b80\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">user journey map</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/journey-map.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-darker os-animation-box-5\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-5\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">task analysis</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-5\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/task-analysis.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-white os-animation-box-6\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-6\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">process flow</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-6\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/process-flow.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-light os-animation-box-7\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-7\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">user flow mapping</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>After the user research and exploration of the main usage scenarios, I switched to wireframing and testing the user flows in order to define key functionality, information architecture and interaction patterns.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-7\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/userflow.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section class=\"case-study color-gray-dark bg-gray-darker os-animation-box-8\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-8\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">detailed wireframes</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>Based on the final version of user-flow mapping, I sketched out and created detailed wireframes for the key pages of the product before switching to building an interactive prototype and user testing stage. Some of the wireframes can be seen below.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-8\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/wireframes.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section id=\"ui-design\" class=\"case-study color-gray-dark bg-gray-light os-animation-box-9\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80 os-animation-item-9\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0s\">\n        <div class=\"col-md-4 cs-header\">\n              <h4 class=\"color-gray-dark\">ui style guide</h4>\n              <hr class=\"bg-gray t40\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>In parallel with designing wireframes and the brand identity, I also established the styles for all required UI elements, and created a detailed UI style guide to offer a powerful set of tools for the development team.</p>\n        </div>\n      </div>\n\n      <div class=\"row os-animation-item-9\" data-os-animation=\"fadeInUp\" data-os-animation-delay=\"0.2s\">\n        <div class=\"col-md-12 b100 text-center\"><img src=\"images/cs-drexy/uikit.png\" alt=\"\"></div>\n      </div>\n\n    </div>\n\n  </section>\n\n\n  <section id=\"uid\" class=\"case-study color-gray-dark bg-gray-darker os-animation\" data-os-animation=\"fadeIn\" data-os-animation-delay=\"0s\">\n    <div class=\"container\">\n      \n      <div class=\"row t80 b80\">\n\n        <div class=\"col-md-4 cs-header\">\n            <h4 class=\"color-gray-dark\">layout designs</h4>\n            <hr class=\"bg-gray t40 right\">\n        </div>\n        <div class=\"col-md-8\">\n            <p>Around 60 high-fidelity layout designs and all required assets were created for iOS and Android. Each page and each UI element was designed with love to build a slick, powerful and interactive application.</p>\n        </div>\n\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-2 text-center\"></div>\n        <div class=\"col-md-1 text-center\"><a href=\"images/cs-drexy/layout-01.png\" rel=\"fluidbox\"><img src=\"images/cs-drexy/layout-01.png\" alt=\"\"></a></div>\n        <div class=\"col-md-2 text-center\"><a href=\"images/cs-drexy/layout-02.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-02.png\" alt=\"\"></a><a href=\"images/cs-drexy/layout-03.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-03.png\" alt=\"\"></a></div>\n        <div class=\"col-md-6 text-center b40\">\n          <div class=\"row\">\n            <div class=\"col-md-12 text-center\"><a href=\"images/cs-drexy/layout-04.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-04.png\" alt=\"\"></a></div>\n          </div>\n          <div class=\"row\">\n            <div class=\"col-md-4 text-center\"><a href=\"images/cs-drexy/layout-05.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-05.png\" alt=\"\"></a></div>\n            <div class=\"col-md-4 text-center\"><a href=\"images/cs-drexy/layout-06.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-06.png\" alt=\"\"></a><a href=\"images/cs-drexy/layout-08.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-08.png\" alt=\"\"></a></div>\n            <div class=\"col-md-4 text-center\"><a href=\"images/cs-drexy/layout-07.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-07.png\" alt=\"\"></a><a href=\"images/cs-drexy/layout-09.png\" rel=\"fluidbox\"><img class=\"b30\" src=\"images/cs-drexy/layout-09.png\" alt=\"\"></a></div>\n          </div>\n        </div>\n        <div class=\"col-md-1\"></div>\n      </div>\n\n      <div class=\"row\">\n        <div class=\"col-md-12\"><hr class=\"bg-gray b80 center\"></div>\n      </div>\n\n  </div>\n\n  <div class=\"container-fluid\">\n    <div class=\"row b100\">\n      \n      <a href=\"cs-tedler.html\" class=\"animsition-link hidden-xs\">\n        <div class=\"col-sm-6 pl0\">\n\n          <div class=\"page-nav page-nav-left text-right\">\n            <span>previous project&nbsp;&nbsp;<i class=\"fa fa-angle-left\"></i></span>\n            <h3>tedler</h3>\n          </div>\n        </div>\n      </a>\n\n      <a href=\"cs-qoipr.html\" class=\"animsition-link\">\n        <div class=\"col-sm-6 pr0\">\n          <div class=\"page-nav page-nav-right\">\n             <span><i class=\"fa fa-angle-right\"></i>&nbsp;&nbsp;next project</span>\n            <h3>QOIPR</h3>\n          </div>\n        </div>\n      </a>\n      \n    </div>\n  </div>  \n\n  </section>\n\n  <footer>\n    \n    <div class=\"container\">\n      \n      <div class=\"row\">\n\n        <div class=\"col-sm-2\">\n          <h4>Menu</h4>\n          <ul>\n            <li><a href=\"index.html\" class=\"animsition-link\">Home</a></li>\n            <li><a href=\"about.html\" class=\"animsition-link\">About</a></li>\n            <li><a href=\"works.html\" class=\"animsition-link\">Works</a></li>\n            <li><a href=\"contacts.php\" class=\"animsition-link\">Contacts</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-sm-2 hidden-xs\">\n          <h4>Social</h4>\n          <ul>\n            <li><a href=\"#\">Facebook</a></li>\n            <li><a href=\"#\">Dribbble</a></li>\n            <li><a href=\"#\">LinkedIn</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-sm-4 hidden-xs\">\n        \n          <h4>Contacts</h4>\n          <p>183 Broken Head Rd, Suffolk Park, NSW, 2481</p>\n          <p>+61 (2) 6685 4284<br>+61 (4) 2388 0877</p>\n          <p><a href=\"mailto:tedler@gmail.com\">tedler [ at ] gmail.com</a></p>\n\n        </div>\n\n        <div class=\"footer-right col-sm-4\">\n\n        <img class=\"footer-logo\" src=\"images/logo-ted-lermontov.svg\" width=\"115px\" alt=\"\">\n        <a href=\"#top\" class=\"scroll-to link-top bg-blue-light bumpBottom\"><i class=\"fa fa-angle-up fa-lg\"></i></a>\n\n        </div>\n\n      </div>\n\n    </div>\n\n  </footer>\n\n</div>\n\n<script src=\"js/script.js\"></script>\n\n</body>\n</html>",
 			"file": "public/cs-drexy.html",
+			"file_size": 17879,
+			"file_write_time": 131581200724076856,
 			"settings":
 			{
-				"buffer_size": 12704,
+				"buffer_size": 17879,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/tedler/Documents/zProjects/Tedler/html/default.html",
+			"settings":
+			{
+				"buffer_size": 22270,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -204,18 +219,11 @@
 			}
 		},
 		{
-			"file": "assets/js/script.js",
-			"settings":
-			{
-				"buffer_size": 10075,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "assets/less/mixing.less",
 			"settings":
 			{
 				"buffer_size": 6890,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -224,6 +232,7 @@
 			"settings":
 			{
 				"buffer_size": 202,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -298,9 +307,11 @@
 	],
 	"file_history":
 	[
+		"/Users/tedler/Documents/workspace/cs/assets/js/script.js",
+		"/Users/tedler/Documents/zProjects/Tedler/html/togo.html",
+		"/Users/tedler/Documents/workspace/cs/node_modules/grunt-contrib-less/node_modules/less/node_modules/image-size/lib/types/jpg.js",
 		"/Users/tedler/Desktop/Mizko _ Freelance UX _ UI Designer from Sydney..html",
 		"/Users/tedler/Desktop/Mizko _ Freelance UX _ UI Designer from Sydney._files/style.css",
-		"/Users/tedler/Documents/zProjects/Tedler/html/togo.html",
 		"/Users/tedler/Documents/zProjects/Tedler/html/js/scripts.js",
 		"/Users/tedler/Desktop/daily-counter-countdown.html",
 		"/Users/tedler/Desktop/compiled/flipclock.js",
@@ -410,7 +421,6 @@
 		"/Users/tedler/Documents/workspace/cs/assets/css/bxslider.css",
 		"/Users/tedler/Documents/workspace/cs/public/works.html",
 		"/Users/tedler/Documents/workspace/cs/assets/css/jquery.bxslider.css",
-		"/Users/tedler/Documents/workspace/cs/assets/js/script.js",
 		"/Users/tedler/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/tedler/Documents/workspace/cs/public/cs.html",
 		"/Users/tedler/Documents/workspace/cs/public/cs-bd.html",
@@ -424,12 +434,11 @@
 		"/Users/tedler/Desktop/html/how-to-play.html",
 		"/Users/tedler/Desktop/html/default.html",
 		"/Users/tedler/Desktop/html/contact-us.html",
-		"/Users/tedler/Documents/zProjects/+/footballnsw.com.au/layouts/default/index.php",
-		"/Users/tedler/Documents/zProjects/BookingDirect/BookingDirect.sublime-project"
+		"/Users/tedler/Documents/zProjects/+/footballnsw.com.au/layouts/default/index.php"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -448,6 +457,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"main",
+			"os-animation-box-9",
+			"os-animation",
+			"os-animation-",
+			"user flow mapping",
+			"font-family",
+			"bariol",
+			"h4",
+			"bariol_bold-webfont",
 			"h1",
 			".css",
 			"-2px",
@@ -566,16 +584,7 @@
 			"*",
 			"10px",
 			"pulse",
-			"animation",
-			"available",
-			"st",
-			"st-animation",
-			"staggered",
-			"animation",
-			"left",
-			"center",
-			"left",
-			"Up"
+			"animation"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -595,7 +604,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -604,15 +613,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12704,
+						"buffer_size": 17879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								735,
-								735
+								295,
+								295
 							]
 						],
 						"settings":
@@ -773,11 +782,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "/Users/tedler/Documents/zProjects/Tedler/html/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19012,
+								19012
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7941.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "public/cs-qoipr.html",
 					"semi_transient": false,
 					"settings":
@@ -871,14 +910,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 874.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "public/cs-cwa.html",
 					"semi_transient": false,
 					"settings":
@@ -972,14 +1011,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3718.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "public/cs-bd.html",
 					"semi_transient": false,
 					"settings":
@@ -1073,14 +1112,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4338.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "public/cs-gw.html",
 					"semi_transient": false,
 					"settings":
@@ -1177,11 +1216,11 @@
 						"translation.y": 3020.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "public/cs-gag.html",
 					"semi_transient": false,
 					"settings":
@@ -1278,11 +1317,11 @@
 						"translation.y": 5205.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "public/cs-tedler.html",
 					"semi_transient": false,
 					"settings":
@@ -1379,11 +1418,11 @@
 						"translation.y": 4115.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "public/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1557,11 +1596,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "public/404.html",
 					"semi_transient": false,
 					"settings":
@@ -1718,11 +1757,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "public/about.html",
 					"semi_transient": false,
 					"settings":
@@ -1820,11 +1859,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "public/works.html",
 					"semi_transient": false,
 					"settings":
@@ -1921,11 +1960,11 @@
 						"translation.y": 3214.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "public/contacts.php",
 					"semi_transient": false,
 					"settings":
@@ -2019,10 +2058,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1168.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 16,
 					"type": "text"
 				}
 			]
@@ -2032,7 +2071,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "assets/less/main.less",
 					"semi_transient": false,
 					"settings":
@@ -2044,8 +2083,8 @@
 						"selection":
 						[
 							[
-								60,
-								60
+								482,
+								482
 							]
 						],
 						"settings":
@@ -2128,107 +2167,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "assets/js/script.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10075,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								781,
-								781
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -2244,8 +2183,8 @@
 						"selection":
 						[
 							[
-								2686,
-								2694
+								1,
+								1
 							]
 						],
 						"settings":
@@ -2391,7 +2330,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -2490,7 +2429,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -2506,8 +2445,8 @@
 						"selection":
 						[
 							[
-								208,
-								208
+								4387,
+								4390
 							]
 						],
 						"settings":
@@ -2649,7 +2588,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -2835,7 +2774,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -2861,7 +2800,7 @@
 		"cols":
 		[
 			0.0,
-			0.634884798992,
+			0.596463359983,
 			1.0
 		],
 		"rows":
@@ -2879,7 +2818,7 @@
 	"project": "cs.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2888,6 +2827,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"cs-de",
+				"public/cs-drexy.html"
+			],
+			[
+				"inde",
+				"public/index.html"
+			],
 			[
 				"main",
 				"assets/less/main.less"
@@ -2899,10 +2846,6 @@
 			[
 				"con",
 				"public/contacts.php"
-			],
-			[
-				"inde",
-				"public/index.html"
 			],
 			[
 				"about",
@@ -2965,7 +2908,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
